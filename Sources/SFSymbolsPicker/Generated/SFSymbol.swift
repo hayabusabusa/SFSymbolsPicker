@@ -1,2914 +1,2914 @@
 import Foundation
 
 // swiftlint:disable all
-public enum SFSymbol: CaseIterable {
+public enum SFSymbol: String, CaseIterable {
     /// square.and.arrow.up
-    case squareAndArrowUp
+    case squareAndArrowUp = "square.and.arrow.up"
     /// square.and.arrow.up.fill
-    case squareAndArrowUpFill
+    case squareAndArrowUpFill = "square.and.arrow.up.fill"
     /// square.and.arrow.down
-    case squareAndArrowDown
+    case squareAndArrowDown = "square.and.arrow.down"
     /// square.and.arrow.down.fill
-    case squareAndArrowDownFill
+    case squareAndArrowDownFill = "square.and.arrow.down.fill"
     /// square.and.arrow.up.on.square
-    case squareAndArrowUpOnSquare
+    case squareAndArrowUpOnSquare = "square.and.arrow.up.on.square"
     /// square.and.arrow.up.on.square.fill
-    case squareAndArrowUpOnSquareFill
+    case squareAndArrowUpOnSquareFill = "square.and.arrow.up.on.square.fill"
     /// square.and.arrow.down.on.square
-    case squareAndArrowDownOnSquare
+    case squareAndArrowDownOnSquare = "square.and.arrow.down.on.square"
     /// square.and.arrow.down.on.square.fill
-    case squareAndArrowDownOnSquareFill
+    case squareAndArrowDownOnSquareFill = "square.and.arrow.down.on.square.fill"
     /// pencil
-    case pencil
+    case pencil = "pencil"
     /// pencil.circle
-    case pencilCircle
+    case pencilCircle = "pencil.circle"
     /// pencil.circle.fill
-    case pencilCircleFill
+    case pencilCircleFill = "pencil.circle.fill"
     /// pencil.slash
-    case pencilSlash
+    case pencilSlash = "pencil.slash"
     /// square.and.pencil
-    case squareAndPencil
+    case squareAndPencil = "square.and.pencil"
     /// scribble
-    case scribble
+    case scribble = "scribble"
     /// pencil.and.outline
-    case pencilAndOutline
+    case pencilAndOutline = "pencil.and.outline"
     /// pencil.tip
-    case pencilTip
+    case pencilTip = "pencil.tip"
     /// pencil.tip.crop.circle
-    case pencilTipCropCircle
+    case pencilTipCropCircle = "pencil.tip.crop.circle"
     /// pencil.tip.crop.circle.badge.plus
-    case pencilTipCropCircleBadgePlus
+    case pencilTipCropCircleBadgePlus = "pencil.tip.crop.circle.badge.plus"
     /// pencil.tip.crop.circle.badge.minus
-    case pencilTipCropCircleBadgeMinus
+    case pencilTipCropCircleBadgeMinus = "pencil.tip.crop.circle.badge.minus"
     /// lasso
-    case lasso
+    case lasso = "lasso"
     /// trash
-    case trash
+    case trash = "trash"
     /// trash.fill
-    case trashFill
+    case trashFill = "trash.fill"
     /// trash.circle
-    case trashCircle
+    case trashCircle = "trash.circle"
     /// trash.circle.fill
-    case trashCircleFill
+    case trashCircleFill = "trash.circle.fill"
     /// trash.slash
-    case trashSlash
+    case trashSlash = "trash.slash"
     /// trash.slash.fill
-    case trashSlashFill
+    case trashSlashFill = "trash.slash.fill"
     /// folder
-    case folder
+    case folder = "folder"
     /// folder.fill
-    case folderFill
+    case folderFill = "folder.fill"
     /// folder.circle
-    case folderCircle
+    case folderCircle = "folder.circle"
     /// folder.circle.fill
-    case folderCircleFill
+    case folderCircleFill = "folder.circle.fill"
     /// folder.badge.plus
-    case folderBadgePlus
+    case folderBadgePlus = "folder.badge.plus"
     /// folder.fill.badge.plus
-    case folderFillBadgePlus
+    case folderFillBadgePlus = "folder.fill.badge.plus"
     /// folder.badge.minus
-    case folderBadgeMinus
+    case folderBadgeMinus = "folder.badge.minus"
     /// folder.fill.badge.minus
-    case folderFillBadgeMinus
+    case folderFillBadgeMinus = "folder.fill.badge.minus"
     /// folder.badge.person.crop
-    case folderBadgePersonCrop
+    case folderBadgePersonCrop = "folder.badge.person.crop"
     /// folder.fill.badge.person.crop
-    case folderFillBadgePersonCrop
+    case folderFillBadgePersonCrop = "folder.fill.badge.person.crop"
     /// paperplane
-    case paperplane
+    case paperplane = "paperplane"
     /// paperplane.fill
-    case paperplaneFill
+    case paperplaneFill = "paperplane.fill"
     /// tray
-    case tray
+    case tray = "tray"
     /// tray.fill
-    case trayFill
+    case trayFill = "tray.fill"
     /// tray.full
-    case trayFull
+    case trayFull = "tray.full"
     /// tray.full.fill
-    case trayFullFill
+    case trayFullFill = "tray.full.fill"
     /// tray.and.arrow.up
-    case trayAndArrowUp
+    case trayAndArrowUp = "tray.and.arrow.up"
     /// tray.and.arrow.up.fill
-    case trayAndArrowUpFill
+    case trayAndArrowUpFill = "tray.and.arrow.up.fill"
     /// tray.and.arrow.down
-    case trayAndArrowDown
+    case trayAndArrowDown = "tray.and.arrow.down"
     /// tray.and.arrow.down.fill
-    case trayAndArrowDownFill
+    case trayAndArrowDownFill = "tray.and.arrow.down.fill"
     /// tray.2
-    case tray2
+    case tray2 = "tray.2"
     /// tray.2.fill
-    case tray2Fill
+    case tray2Fill = "tray.2.fill"
     /// archivebox
-    case archivebox
+    case archivebox = "archivebox"
     /// archivebox.fill
-    case archiveboxFill
+    case archiveboxFill = "archivebox.fill"
     /// arrow.up.bin
-    case arrowUpBin
+    case arrowUpBin = "arrow.up.bin"
     /// arrow.up.bin.fill
-    case arrowUpBinFill
+    case arrowUpBinFill = "arrow.up.bin.fill"
     /// calendar
-    case calendar
+    case calendar = "calendar"
     /// calendar.circle
-    case calendarCircle
+    case calendarCircle = "calendar.circle"
     /// calendar.circle.fill
-    case calendarCircleFill
+    case calendarCircleFill = "calendar.circle.fill"
     /// calendar.badge.plus
-    case calendarBadgePlus
+    case calendarBadgePlus = "calendar.badge.plus"
     /// calendar.badge.minus
-    case calendarBadgeMinus
+    case calendarBadgeMinus = "calendar.badge.minus"
     /// arrowshape.turn.up.left
-    case arrowshapeTurnUpLeft
+    case arrowshapeTurnUpLeft = "arrowshape.turn.up.left"
     /// arrowshape.turn.up.left.fill
-    case arrowshapeTurnUpLeftFill
+    case arrowshapeTurnUpLeftFill = "arrowshape.turn.up.left.fill"
     /// arrowshape.turn.up.left.circle
-    case arrowshapeTurnUpLeftCircle
+    case arrowshapeTurnUpLeftCircle = "arrowshape.turn.up.left.circle"
     /// arrowshape.turn.up.left.circle.fill
-    case arrowshapeTurnUpLeftCircleFill
+    case arrowshapeTurnUpLeftCircleFill = "arrowshape.turn.up.left.circle.fill"
     /// arrowshape.turn.up.right
-    case arrowshapeTurnUpRight
+    case arrowshapeTurnUpRight = "arrowshape.turn.up.right"
     /// arrowshape.turn.up.right.fill
-    case arrowshapeTurnUpRightFill
+    case arrowshapeTurnUpRightFill = "arrowshape.turn.up.right.fill"
     /// arrowshape.turn.up.right.circle
-    case arrowshapeTurnUpRightCircle
+    case arrowshapeTurnUpRightCircle = "arrowshape.turn.up.right.circle"
     /// arrowshape.turn.up.right.circle.fill
-    case arrowshapeTurnUpRightCircleFill
+    case arrowshapeTurnUpRightCircleFill = "arrowshape.turn.up.right.circle.fill"
     /// arrowshape.turn.up.left.2
-    case arrowshapeTurnUpLeft2
+    case arrowshapeTurnUpLeft2 = "arrowshape.turn.up.left.2"
     /// arrowshape.turn.up.left.2.fill
-    case arrowshapeTurnUpLeft2Fill
+    case arrowshapeTurnUpLeft2Fill = "arrowshape.turn.up.left.2.fill"
     /// book
-    case book
+    case book = "book"
     /// book.fill
-    case bookFill
+    case bookFill = "book.fill"
     /// book.circle
-    case bookCircle
+    case bookCircle = "book.circle"
     /// book.circle.fill
-    case bookCircleFill
+    case bookCircleFill = "book.circle.fill"
     /// bookmark
-    case bookmark
+    case bookmark = "bookmark"
     /// bookmark.fill
-    case bookmarkFill
+    case bookmarkFill = "bookmark.fill"
     /// paperclip
-    case paperclip
+    case paperclip = "paperclip"
     /// rectangle.and.paperclip
-    case rectangleAndPaperclip
+    case rectangleAndPaperclip = "rectangle.and.paperclip"
     /// link
-    case link
+    case link = "link"
     /// link.circle
-    case linkCircle
+    case linkCircle = "link.circle"
     /// link.circle.fill
-    case linkCircleFill
+    case linkCircleFill = "link.circle.fill"
     /// personalhotspot
-    case personalhotspot
+    case personalhotspot = "personalhotspot"
     /// person
-    case person
+    case person = "person"
     /// person.fill
-    case personFill
+    case personFill = "person.fill"
     /// person.circle
-    case personCircle
+    case personCircle = "person.circle"
     /// person.circle.fill
-    case personCircleFill
+    case personCircleFill = "person.circle.fill"
     /// person.badge.plus
-    case personBadgePlus
+    case personBadgePlus = "person.badge.plus"
     /// person.badge.minus
-    case personBadgeMinus
+    case personBadgeMinus = "person.badge.minus"
     /// person.2
-    case person2
+    case person2 = "person.2"
     /// person.2.fill
-    case person2Fill
+    case person2Fill = "person.2.fill"
     /// person.3
-    case person3
+    case person3 = "person.3"
     /// person.3.fill
-    case person3Fill
+    case person3Fill = "person.3.fill"
     /// person.crop.circle
-    case personCropCircle
+    case personCropCircle = "person.crop.circle"
     /// person.crop.circle.fill
-    case personCropCircleFill
+    case personCropCircleFill = "person.crop.circle.fill"
     /// person.crop.circle.badge.plus
-    case personCropCircleBadgePlus
+    case personCropCircleBadgePlus = "person.crop.circle.badge.plus"
     /// person.crop.circle.fill.badge.plus
-    case personCropCircleFillBadgePlus
+    case personCropCircleFillBadgePlus = "person.crop.circle.fill.badge.plus"
     /// person.crop.circle.badge.minus
-    case personCropCircleBadgeMinus
+    case personCropCircleBadgeMinus = "person.crop.circle.badge.minus"
     /// person.crop.circle.fill.badge.minus
-    case personCropCircleFillBadgeMinus
+    case personCropCircleFillBadgeMinus = "person.crop.circle.fill.badge.minus"
     /// person.crop.circle.badge.checkmark
-    case personCropCircleBadgeCheckmark
+    case personCropCircleBadgeCheckmark = "person.crop.circle.badge.checkmark"
     /// person.crop.circle.fill.badge.checkmark
-    case personCropCircleFillBadgeCheckmark
+    case personCropCircleFillBadgeCheckmark = "person.crop.circle.fill.badge.checkmark"
     /// person.crop.circle.badge.xmark
-    case personCropCircleBadgeXmark
+    case personCropCircleBadgeXmark = "person.crop.circle.badge.xmark"
     /// person.crop.circle.fill.badge.xmark
-    case personCropCircleFillBadgeXmark
+    case personCropCircleFillBadgeXmark = "person.crop.circle.fill.badge.xmark"
     /// person.crop.square
-    case personCropSquare
+    case personCropSquare = "person.crop.square"
     /// person.crop.square.fill
-    case personCropSquareFill
+    case personCropSquareFill = "person.crop.square.fill"
     /// person.crop.rectangle
-    case personCropRectangle
+    case personCropRectangle = "person.crop.rectangle"
     /// person.crop.rectangle.fill
-    case personCropRectangleFill
+    case personCropRectangleFill = "person.crop.rectangle.fill"
     /// sportscourt
-    case sportscourt
+    case sportscourt = "sportscourt"
     /// sportscourt.fill
-    case sportscourtFill
+    case sportscourtFill = "sportscourt.fill"
     /// rosette
-    case rosette
+    case rosette = "rosette"
     /// command
-    case command
+    case command = "command"
     /// option
-    case option
+    case option = "option"
     /// alt
-    case alt
+    case alt = "alt"
     /// control
-    case control
+    case control = "control"
     /// projective
-    case projective
+    case projective = "projective"
     /// escape
-    case escape
+    case escape = "escape"
     /// light.min
-    case lightMin
+    case lightMin = "light.min"
     /// light.max
-    case lightMax
+    case lightMax = "light.max"
     /// power
-    case power
+    case power = "power"
     /// clear
-    case clear
+    case clear = "clear"
     /// clear.fill
-    case clearFill
+    case clearFill = "clear.fill"
     /// delete.left
-    case deleteLeft
+    case deleteLeft = "delete.left"
     /// delete.left.fill
-    case deleteLeftFill
+    case deleteLeftFill = "delete.left.fill"
     /// delete.right
-    case deleteRight
+    case deleteRight = "delete.right"
     /// delete.right.fill
-    case deleteRightFill
+    case deleteRightFill = "delete.right.fill"
     /// shift
-    case shift
+    case shift = "shift"
     /// shift.fill
-    case shiftFill
+    case shiftFill = "shift.fill"
     /// capslock
-    case capslock
+    case capslock = "capslock"
     /// capslock.fill
-    case capslockFill
+    case capslockFill = "capslock.fill"
     /// eject
-    case eject
+    case eject = "eject"
     /// eject.fill
-    case ejectFill
+    case ejectFill = "eject.fill"
     /// rays
-    case rays
+    case rays = "rays"
     /// slowmo
-    case slowmo
+    case slowmo = "slowmo"
     /// timelapse
-    case timelapse
+    case timelapse = "timelapse"
     /// keyboard
-    case keyboard
+    case keyboard = "keyboard"
     /// keyboard.chevron.compact.down
-    case keyboardChevronCompactDown
+    case keyboardChevronCompactDown = "keyboard.chevron.compact.down"
     /// globe
-    case globe
+    case globe = "globe"
     /// sun.min
-    case sunMin
+    case sunMin = "sun.min"
     /// sun.min.fill
-    case sunMinFill
+    case sunMinFill = "sun.min.fill"
     /// sun.max
-    case sunMax
+    case sunMax = "sun.max"
     /// sun.max.fill
-    case sunMaxFill
+    case sunMaxFill = "sun.max.fill"
     /// sunrise
-    case sunrise
+    case sunrise = "sunrise"
     /// sunrise.fill
-    case sunriseFill
+    case sunriseFill = "sunrise.fill"
     /// sunset
-    case sunset
+    case sunset = "sunset"
     /// sunset.fill
-    case sunsetFill
+    case sunsetFill = "sunset.fill"
     /// sun.dust
-    case sunDust
+    case sunDust = "sun.dust"
     /// sun.dust.fill
-    case sunDustFill
+    case sunDustFill = "sun.dust.fill"
     /// sun.haze
-    case sunHaze
+    case sunHaze = "sun.haze"
     /// sun.haze.fill
-    case sunHazeFill
+    case sunHazeFill = "sun.haze.fill"
     /// zzz
-    case zzz
+    case zzz = "zzz"
     /// moon
-    case moon
+    case moon = "moon"
     /// moon.fill
-    case moonFill
+    case moonFill = "moon.fill"
     /// moon.circle
-    case moonCircle
+    case moonCircle = "moon.circle"
     /// moon.circle.fill
-    case moonCircleFill
+    case moonCircleFill = "moon.circle.fill"
     /// moon.zzz
-    case moonZzz
+    case moonZzz = "moon.zzz"
     /// moon.zzz.fill
-    case moonZzzFill
+    case moonZzzFill = "moon.zzz.fill"
     /// sparkles
-    case sparkles
+    case sparkles = "sparkles"
     /// moon.stars
-    case moonStars
+    case moonStars = "moon.stars"
     /// moon.stars.fill
-    case moonStarsFill
+    case moonStarsFill = "moon.stars.fill"
     /// cloud
-    case cloud
+    case cloud = "cloud"
     /// cloud.fill
-    case cloudFill
+    case cloudFill = "cloud.fill"
     /// cloud.drizzle
-    case cloudDrizzle
+    case cloudDrizzle = "cloud.drizzle"
     /// cloud.drizzle.fill
-    case cloudDrizzleFill
+    case cloudDrizzleFill = "cloud.drizzle.fill"
     /// cloud.rain
-    case cloudRain
+    case cloudRain = "cloud.rain"
     /// cloud.rain.fill
-    case cloudRainFill
+    case cloudRainFill = "cloud.rain.fill"
     /// cloud.heavyrain
-    case cloudHeavyrain
+    case cloudHeavyrain = "cloud.heavyrain"
     /// cloud.heavyrain.fill
-    case cloudHeavyrainFill
+    case cloudHeavyrainFill = "cloud.heavyrain.fill"
     /// cloud.fog
-    case cloudFog
+    case cloudFog = "cloud.fog"
     /// cloud.fog.fill
-    case cloudFogFill
+    case cloudFogFill = "cloud.fog.fill"
     /// cloud.hail
-    case cloudHail
+    case cloudHail = "cloud.hail"
     /// cloud.hail.fill
-    case cloudHailFill
+    case cloudHailFill = "cloud.hail.fill"
     /// cloud.snow
-    case cloudSnow
+    case cloudSnow = "cloud.snow"
     /// cloud.snow.fill
-    case cloudSnowFill
+    case cloudSnowFill = "cloud.snow.fill"
     /// cloud.sleet
-    case cloudSleet
+    case cloudSleet = "cloud.sleet"
     /// cloud.sleet.fill
-    case cloudSleetFill
+    case cloudSleetFill = "cloud.sleet.fill"
     /// cloud.bolt
-    case cloudBolt
+    case cloudBolt = "cloud.bolt"
     /// cloud.bolt.fill
-    case cloudBoltFill
+    case cloudBoltFill = "cloud.bolt.fill"
     /// cloud.bolt.rain
-    case cloudBoltRain
+    case cloudBoltRain = "cloud.bolt.rain"
     /// cloud.bolt.rain.fill
-    case cloudBoltRainFill
+    case cloudBoltRainFill = "cloud.bolt.rain.fill"
     /// cloud.sun
-    case cloudSun
+    case cloudSun = "cloud.sun"
     /// cloud.sun.fill
-    case cloudSunFill
+    case cloudSunFill = "cloud.sun.fill"
     /// cloud.sun.rain
-    case cloudSunRain
+    case cloudSunRain = "cloud.sun.rain"
     /// cloud.sun.rain.fill
-    case cloudSunRainFill
+    case cloudSunRainFill = "cloud.sun.rain.fill"
     /// cloud.sun.bolt
-    case cloudSunBolt
+    case cloudSunBolt = "cloud.sun.bolt"
     /// cloud.sun.bolt.fill
-    case cloudSunBoltFill
+    case cloudSunBoltFill = "cloud.sun.bolt.fill"
     /// cloud.moon
-    case cloudMoon
+    case cloudMoon = "cloud.moon"
     /// cloud.moon.fill
-    case cloudMoonFill
+    case cloudMoonFill = "cloud.moon.fill"
     /// cloud.moon.rain
-    case cloudMoonRain
+    case cloudMoonRain = "cloud.moon.rain"
     /// cloud.moon.rain.fill
-    case cloudMoonRainFill
+    case cloudMoonRainFill = "cloud.moon.rain.fill"
     /// cloud.moon.bolt
-    case cloudMoonBolt
+    case cloudMoonBolt = "cloud.moon.bolt"
     /// cloud.moon.bolt.fill
-    case cloudMoonBoltFill
+    case cloudMoonBoltFill = "cloud.moon.bolt.fill"
     /// smoke
-    case smoke
+    case smoke = "smoke"
     /// smoke.fill
-    case smokeFill
+    case smokeFill = "smoke.fill"
     /// wind
-    case wind
+    case wind = "wind"
     /// wind.snow
-    case windSnow
+    case windSnow = "wind.snow"
     /// tornado
-    case tornado
+    case tornado = "tornado"
     /// tropicalstorm
-    case tropicalstorm
+    case tropicalstorm = "tropicalstorm"
     /// hurricane
-    case hurricane
+    case hurricane = "hurricane"
     /// thermometer.sun
-    case thermometerSun
+    case thermometerSun = "thermometer.sun"
     /// thermometer.snowflake
-    case thermometerSnowflake
+    case thermometerSnowflake = "thermometer.snowflake"
     /// drop.triangle
-    case dropTriangle
+    case dropTriangle = "drop.triangle"
     /// drop.triangle.fill
-    case dropTriangleFill
+    case dropTriangleFill = "drop.triangle.fill"
     /// flame
-    case flame
+    case flame = "flame"
     /// flame.fill
-    case flameFill
+    case flameFill = "flame.fill"
     /// umbrella
-    case umbrella
+    case umbrella = "umbrella"
     /// umbrella.fill
-    case umbrellaFill
+    case umbrellaFill = "umbrella.fill"
     /// play
-    case play
+    case play = "play"
     /// play.fill
-    case playFill
+    case playFill = "play.fill"
     /// play.circle
-    case playCircle
+    case playCircle = "play.circle"
     /// play.circle.fill
-    case playCircleFill
+    case playCircleFill = "play.circle.fill"
     /// play.rectangle
-    case playRectangle
+    case playRectangle = "play.rectangle"
     /// play.rectangle.fill
-    case playRectangleFill
+    case playRectangleFill = "play.rectangle.fill"
     /// pause
-    case pause
+    case pause = "pause"
     /// pause.fill
-    case pauseFill
+    case pauseFill = "pause.fill"
     /// pause.circle
-    case pauseCircle
+    case pauseCircle = "pause.circle"
     /// pause.circle.fill
-    case pauseCircleFill
+    case pauseCircleFill = "pause.circle.fill"
     /// pause.rectangle
-    case pauseRectangle
+    case pauseRectangle = "pause.rectangle"
     /// pause.rectangle.fill
-    case pauseRectangleFill
+    case pauseRectangleFill = "pause.rectangle.fill"
     /// stop
-    case stop
+    case stop = "stop"
     /// stop.fill
-    case stopFill
+    case stopFill = "stop.fill"
     /// stop.circle
-    case stopCircle
+    case stopCircle = "stop.circle"
     /// stop.circle.fill
-    case stopCircleFill
+    case stopCircleFill = "stop.circle.fill"
     /// playpause
-    case playpause
+    case playpause = "playpause"
     /// playpause.fill
-    case playpauseFill
+    case playpauseFill = "playpause.fill"
     /// backward
-    case backward
+    case backward = "backward"
     /// backward.fill
-    case backwardFill
+    case backwardFill = "backward.fill"
     /// forward
-    case forward
+    case forward = "forward"
     /// forward.fill
-    case forwardFill
+    case forwardFill = "forward.fill"
     /// backward.end
-    case backwardEnd
+    case backwardEnd = "backward.end"
     /// backward.end.fill
-    case backwardEndFill
+    case backwardEndFill = "backward.end.fill"
     /// forward.end
-    case forwardEnd
+    case forwardEnd = "forward.end"
     /// forward.end.fill
-    case forwardEndFill
+    case forwardEndFill = "forward.end.fill"
     /// backward.end.alt
-    case backwardEndAlt
+    case backwardEndAlt = "backward.end.alt"
     /// backward.end.alt.fill
-    case backwardEndAltFill
+    case backwardEndAltFill = "backward.end.alt.fill"
     /// forward.end.alt
-    case forwardEndAlt
+    case forwardEndAlt = "forward.end.alt"
     /// forward.end.alt.fill
-    case forwardEndAltFill
+    case forwardEndAltFill = "forward.end.alt.fill"
     /// memories
-    case memories
+    case memories = "memories"
     /// memories.badge.plus
-    case memoriesBadgePlus
+    case memoriesBadgePlus = "memories.badge.plus"
     /// memories.badge.minus
-    case memoriesBadgeMinus
+    case memoriesBadgeMinus = "memories.badge.minus"
     /// shuffle
-    case shuffle
+    case shuffle = "shuffle"
     /// repeat
-    case `repeat`
+    case `repeat` = "repeat"
     /// repeat.1
-    case repeat1
+    case repeat1 = "repeat.1"
     /// speaker
-    case speaker
+    case speaker = "speaker"
     /// speaker.fill
-    case speakerFill
+    case speakerFill = "speaker.fill"
     /// speaker.slash
-    case speakerSlash
+    case speakerSlash = "speaker.slash"
     /// speaker.slash.fill
-    case speakerSlashFill
+    case speakerSlashFill = "speaker.slash.fill"
     /// speaker.zzz
-    case speakerZzz
+    case speakerZzz = "speaker.zzz"
     /// speaker.zzz.fill
-    case speakerZzzFill
+    case speakerZzzFill = "speaker.zzz.fill"
     /// badge.plus.radiowaves.right
-    case badgePlusRadiowavesRight
+    case badgePlusRadiowavesRight = "badge.plus.radiowaves.right"
     /// music.note
-    case musicNote
+    case musicNote = "music.note"
     /// music.note.list
-    case musicNoteList
+    case musicNoteList = "music.note.list"
     /// magnifyingglass
-    case magnifyingglass
+    case magnifyingglass = "magnifyingglass"
     /// magnifyingglass.circle
-    case magnifyingglassCircle
+    case magnifyingglassCircle = "magnifyingglass.circle"
     /// magnifyingglass.circle.fill
-    case magnifyingglassCircleFill
+    case magnifyingglassCircleFill = "magnifyingglass.circle.fill"
     /// plus.magnifyingglass
-    case plusMagnifyingglass
+    case plusMagnifyingglass = "plus.magnifyingglass"
     /// minus.magnifyingglass
-    case minusMagnifyingglass
+    case minusMagnifyingglass = "minus.magnifyingglass"
     /// 1.magnifyingglass
-    case magnifyingglass1
+    case magnifyingglass1 = "1.magnifyingglass"
     /// circle
-    case circle
+    case circle = "circle"
     /// circle.fill
-    case circleFill
+    case circleFill = "circle.fill"
     /// smallcircle.circle
-    case smallcircleCircle
+    case smallcircleCircle = "smallcircle.circle"
     /// smallcircle.circle.fill
-    case smallcircleCircleFill
+    case smallcircleCircleFill = "smallcircle.circle.fill"
     /// circle.grid.3x3
-    case circleGrid3x3
+    case circleGrid3x3 = "circle.grid.3x3"
     /// circle.grid.3x3.fill
-    case circleGrid3x3Fill
+    case circleGrid3x3Fill = "circle.grid.3x3.fill"
     /// square
-    case square
+    case square = "square"
     /// square.fill
-    case squareFill
+    case squareFill = "square.fill"
     /// square.split.2x1
-    case squareSplit2x1
+    case squareSplit2x1 = "square.split.2x1"
     /// square.split.2x1.fill
-    case squareSplit2x1Fill
+    case squareSplit2x1Fill = "square.split.2x1.fill"
     /// square.split.1x2
-    case squareSplit1x2
+    case squareSplit1x2 = "square.split.1x2"
     /// square.split.1x2.fill
-    case squareSplit1x2Fill
+    case squareSplit1x2Fill = "square.split.1x2.fill"
     /// square.split.2x2
-    case squareSplit2x2
+    case squareSplit2x2 = "square.split.2x2"
     /// square.split.2x2.fill
-    case squareSplit2x2Fill
+    case squareSplit2x2Fill = "square.split.2x2.fill"
     /// dot.square
-    case dotSquare
+    case dotSquare = "dot.square"
     /// dot.square.fill
-    case dotSquareFill
+    case dotSquareFill = "dot.square.fill"
     /// square.on.square
-    case squareOnSquare
+    case squareOnSquare = "square.on.square"
     /// square.fill.on.square.fill
-    case squareFillOnSquareFill
+    case squareFillOnSquareFill = "square.fill.on.square.fill"
     /// plus.square.on.square
-    case plusSquareOnSquare
+    case plusSquareOnSquare = "plus.square.on.square"
     /// plus.square.fill.on.square.fill
-    case plusSquareFillOnSquareFill
+    case plusSquareFillOnSquareFill = "plus.square.fill.on.square.fill"
     /// square.on.circle
-    case squareOnCircle
+    case squareOnCircle = "square.on.circle"
     /// square.fill.on.circle.fill
-    case squareFillOnCircleFill
+    case squareFillOnCircleFill = "square.fill.on.circle.fill"
     /// square.stack
-    case squareStack
+    case squareStack = "square.stack"
     /// square.stack.fill
-    case squareStackFill
+    case squareStackFill = "square.stack.fill"
     /// square.grid.4x3.fill
-    case squareGrid4x3Fill
+    case squareGrid4x3Fill = "square.grid.4x3.fill"
     /// app
-    case app
+    case app = "app"
     /// app.fill
-    case appFill
+    case appFill = "app.fill"
     /// plus.app
-    case plusApp
+    case plusApp = "plus.app"
     /// plus.app.fill
-    case plusAppFill
+    case plusAppFill = "plus.app.fill"
     /// app.badge
-    case appBadge
+    case appBadge = "app.badge"
     /// app.badge.fill
-    case appBadgeFill
+    case appBadgeFill = "app.badge.fill"
     /// app.gift
-    case appGift
+    case appGift = "app.gift"
     /// app.gift.fill
-    case appGiftFill
+    case appGiftFill = "app.gift.fill"
     /// rectangle
-    case rectangle
+    case rectangle = "rectangle"
     /// rectangle.fill
-    case rectangleFill
+    case rectangleFill = "rectangle.fill"
     /// rectangle.split.3x1
-    case rectangleSplit3x1
+    case rectangleSplit3x1 = "rectangle.split.3x1"
     /// rectangle.split.3x1.fill
-    case rectangleSplit3x1Fill
+    case rectangleSplit3x1Fill = "rectangle.split.3x1.fill"
     /// rectangle.split.3x3
-    case rectangleSplit3x3
+    case rectangleSplit3x3 = "rectangle.split.3x3"
     /// rectangle.split.3x3.fill
-    case rectangleSplit3x3Fill
+    case rectangleSplit3x3Fill = "rectangle.split.3x3.fill"
     /// rectangle.on.rectangle
-    case rectangleOnRectangle
+    case rectangleOnRectangle = "rectangle.on.rectangle"
     /// rectangle.fill.on.rectangle.fill
-    case rectangleFillOnRectangleFill
+    case rectangleFillOnRectangleFill = "rectangle.fill.on.rectangle.fill"
     /// plus.rectangle.on.rectangle
-    case plusRectangleOnRectangle
+    case plusRectangleOnRectangle = "plus.rectangle.on.rectangle"
     /// plus.rectangle.fill.on.rectangle.fill
-    case plusRectangleFillOnRectangleFill
+    case plusRectangleFillOnRectangleFill = "plus.rectangle.fill.on.rectangle.fill"
     /// square.grid.2x2
-    case squareGrid2x2
+    case squareGrid2x2 = "square.grid.2x2"
     /// square.grid.2x2.fill
-    case squareGrid2x2Fill
+    case squareGrid2x2Fill = "square.grid.2x2.fill"
     /// rectangle.grid.2x2
-    case rectangleGrid2x2
+    case rectangleGrid2x2 = "rectangle.grid.2x2"
     /// rectangle.grid.2x2.fill
-    case rectangleGrid2x2Fill
+    case rectangleGrid2x2Fill = "rectangle.grid.2x2.fill"
     /// square.grid.3x2
-    case squareGrid3x2
+    case squareGrid3x2 = "square.grid.3x2"
     /// square.grid.3x2.fill
-    case squareGrid3x2Fill
+    case squareGrid3x2Fill = "square.grid.3x2.fill"
     /// rectangle.grid.3x2
-    case rectangleGrid3x2
+    case rectangleGrid3x2 = "rectangle.grid.3x2"
     /// rectangle.grid.3x2.fill
-    case rectangleGrid3x2Fill
+    case rectangleGrid3x2Fill = "rectangle.grid.3x2.fill"
     /// rectangle.grid.1x2
-    case rectangleGrid1x2
+    case rectangleGrid1x2 = "rectangle.grid.1x2"
     /// rectangle.grid.1x2.fill
-    case rectangleGrid1x2Fill
+    case rectangleGrid1x2Fill = "rectangle.grid.1x2.fill"
     /// capsule
-    case capsule
+    case capsule = "capsule"
     /// capsule.fill
-    case capsuleFill
+    case capsuleFill = "capsule.fill"
     /// triangle
-    case triangle
+    case triangle = "triangle"
     /// triangle.fill
-    case triangleFill
+    case triangleFill = "triangle.fill"
     /// exclamationmark.triangle
-    case exclamationmarkTriangle
+    case exclamationmarkTriangle = "exclamationmark.triangle"
     /// exclamationmark.triangle.fill
-    case exclamationmarkTriangleFill
+    case exclamationmarkTriangleFill = "exclamationmark.triangle.fill"
     /// hexagon
-    case hexagon
+    case hexagon = "hexagon"
     /// hexagon.fill
-    case hexagonFill
+    case hexagonFill = "hexagon.fill"
     /// checkmark.seal
-    case checkmarkSeal
+    case checkmarkSeal = "checkmark.seal"
     /// checkmark.seal.fill
-    case checkmarkSealFill
+    case checkmarkSealFill = "checkmark.seal.fill"
     /// xmark.seal
-    case xmarkSeal
+    case xmarkSeal = "xmark.seal"
     /// xmark.seal.fill
-    case xmarkSealFill
+    case xmarkSealFill = "xmark.seal.fill"
     /// heart
-    case heart
+    case heart = "heart"
     /// heart.fill
-    case heartFill
+    case heartFill = "heart.fill"
     /// heart.circle
-    case heartCircle
+    case heartCircle = "heart.circle"
     /// heart.circle.fill
-    case heartCircleFill
+    case heartCircleFill = "heart.circle.fill"
     /// heart.slash
-    case heartSlash
+    case heartSlash = "heart.slash"
     /// heart.slash.fill
-    case heartSlashFill
+    case heartSlashFill = "heart.slash.fill"
     /// heart.slash.circle
-    case heartSlashCircle
+    case heartSlashCircle = "heart.slash.circle"
     /// heart.slash.circle.fill
-    case heartSlashCircleFill
+    case heartSlashCircleFill = "heart.slash.circle.fill"
     /// suit.heart
-    case suitHeart
+    case suitHeart = "suit.heart"
     /// suit.heart.fill
-    case suitHeartFill
+    case suitHeartFill = "suit.heart.fill"
     /// suit.club
-    case suitClub
+    case suitClub = "suit.club"
     /// suit.club.fill
-    case suitClubFill
+    case suitClubFill = "suit.club.fill"
     /// suit.diamond
-    case suitDiamond
+    case suitDiamond = "suit.diamond"
     /// suit.diamond.fill
-    case suitDiamondFill
+    case suitDiamondFill = "suit.diamond.fill"
     /// suit.spade
-    case suitSpade
+    case suitSpade = "suit.spade"
     /// suit.spade.fill
-    case suitSpadeFill
+    case suitSpadeFill = "suit.spade.fill"
     /// star
-    case star
+    case star = "star"
     /// star.fill
-    case starFill
+    case starFill = "star.fill"
     /// star.slash
-    case starSlash
+    case starSlash = "star.slash"
     /// star.slash.fill
-    case starSlashFill
+    case starSlashFill = "star.slash.fill"
     /// star.circle
-    case starCircle
+    case starCircle = "star.circle"
     /// star.circle.fill
-    case starCircleFill
+    case starCircleFill = "star.circle.fill"
     /// rhombus
-    case rhombus
+    case rhombus = "rhombus"
     /// rhombus.fill
-    case rhombusFill
+    case rhombusFill = "rhombus.fill"
     /// shield
-    case shield
+    case shield = "shield"
     /// shield.fill
-    case shieldFill
+    case shieldFill = "shield.fill"
     /// shield.slash
-    case shieldSlash
+    case shieldSlash = "shield.slash"
     /// shield.slash.fill
-    case shieldSlashFill
+    case shieldSlashFill = "shield.slash.fill"
     /// flag
-    case flag
+    case flag = "flag"
     /// flag.fill
-    case flagFill
+    case flagFill = "flag.fill"
     /// flag.circle
-    case flagCircle
+    case flagCircle = "flag.circle"
     /// flag.circle.fill
-    case flagCircleFill
+    case flagCircleFill = "flag.circle.fill"
     /// flag.slash
-    case flagSlash
+    case flagSlash = "flag.slash"
     /// flag.slash.fill
-    case flagSlashFill
+    case flagSlashFill = "flag.slash.fill"
     /// location
-    case location
+    case location = "location"
     /// location.fill
-    case locationFill
+    case locationFill = "location.fill"
     /// location.circle
-    case locationCircle
+    case locationCircle = "location.circle"
     /// location.circle.fill
-    case locationCircleFill
+    case locationCircleFill = "location.circle.fill"
     /// location.slash
-    case locationSlash
+    case locationSlash = "location.slash"
     /// location.slash.fill
-    case locationSlashFill
+    case locationSlashFill = "location.slash.fill"
     /// location.north
-    case locationNorth
+    case locationNorth = "location.north"
     /// location.north.fill
-    case locationNorthFill
+    case locationNorthFill = "location.north.fill"
     /// location.north.line
-    case locationNorthLine
+    case locationNorthLine = "location.north.line"
     /// location.north.line.fill
-    case locationNorthLineFill
+    case locationNorthLineFill = "location.north.line.fill"
     /// bell
-    case bell
+    case bell = "bell"
     /// bell.fill
-    case bellFill
+    case bellFill = "bell.fill"
     /// bell.circle
-    case bellCircle
+    case bellCircle = "bell.circle"
     /// bell.circle.fill
-    case bellCircleFill
+    case bellCircleFill = "bell.circle.fill"
     /// bell.slash
-    case bellSlash
+    case bellSlash = "bell.slash"
     /// bell.slash.fill
-    case bellSlashFill
+    case bellSlashFill = "bell.slash.fill"
     /// tag
-    case tag
+    case tag = "tag"
     /// tag.fill
-    case tagFill
+    case tagFill = "tag.fill"
     /// tag.circle
-    case tagCircle
+    case tagCircle = "tag.circle"
     /// tag.circle.fill
-    case tagCircleFill
+    case tagCircleFill = "tag.circle.fill"
     /// bolt
-    case bolt
+    case bolt = "bolt"
     /// bolt.fill
-    case boltFill
+    case boltFill = "bolt.fill"
     /// bolt.circle
-    case boltCircle
+    case boltCircle = "bolt.circle"
     /// bolt.circle.fill
-    case boltCircleFill
+    case boltCircleFill = "bolt.circle.fill"
     /// bolt.slash
-    case boltSlash
+    case boltSlash = "bolt.slash"
     /// bolt.slash.fill
-    case boltSlashFill
+    case boltSlashFill = "bolt.slash.fill"
     /// bolt.horizontal
-    case boltHorizontal
+    case boltHorizontal = "bolt.horizontal"
     /// bolt.horizontal.fill
-    case boltHorizontalFill
+    case boltHorizontalFill = "bolt.horizontal.fill"
     /// bolt.horizontal.circle
-    case boltHorizontalCircle
+    case boltHorizontalCircle = "bolt.horizontal.circle"
     /// bolt.horizontal.circle.fill
-    case boltHorizontalCircleFill
+    case boltHorizontalCircleFill = "bolt.horizontal.circle.fill"
     /// icloud
-    case icloud
+    case icloud = "icloud"
     /// icloud.fill
-    case icloudFill
+    case icloudFill = "icloud.fill"
     /// icloud.circle
-    case icloudCircle
+    case icloudCircle = "icloud.circle"
     /// icloud.circle.fill
-    case icloudCircleFill
+    case icloudCircleFill = "icloud.circle.fill"
     /// icloud.slash
-    case icloudSlash
+    case icloudSlash = "icloud.slash"
     /// icloud.slash.fill
-    case icloudSlashFill
+    case icloudSlashFill = "icloud.slash.fill"
     /// exclamationmark.icloud
-    case exclamationmarkIcloud
+    case exclamationmarkIcloud = "exclamationmark.icloud"
     /// exclamationmark.icloud.fill
-    case exclamationmarkIcloudFill
+    case exclamationmarkIcloudFill = "exclamationmark.icloud.fill"
     /// xmark.icloud
-    case xmarkIcloud
+    case xmarkIcloud = "xmark.icloud"
     /// xmark.icloud.fill
-    case xmarkIcloudFill
+    case xmarkIcloudFill = "xmark.icloud.fill"
     /// link.icloud
-    case linkIcloud
+    case linkIcloud = "link.icloud"
     /// link.icloud.fill
-    case linkIcloudFill
+    case linkIcloudFill = "link.icloud.fill"
     /// bolt.horizontal.icloud
-    case boltHorizontalIcloud
+    case boltHorizontalIcloud = "bolt.horizontal.icloud"
     /// bolt.horizontal.icloud.fill
-    case boltHorizontalIcloudFill
+    case boltHorizontalIcloudFill = "bolt.horizontal.icloud.fill"
     /// person.icloud
-    case personIcloud
+    case personIcloud = "person.icloud"
     /// person.icloud.fill
-    case personIcloudFill
+    case personIcloudFill = "person.icloud.fill"
     /// lock.icloud
-    case lockIcloud
+    case lockIcloud = "lock.icloud"
     /// lock.icloud.fill
-    case lockIcloudFill
+    case lockIcloudFill = "lock.icloud.fill"
     /// icloud.and.arrow.down
-    case icloudAndArrowDown
+    case icloudAndArrowDown = "icloud.and.arrow.down"
     /// icloud.and.arrow.down.fill
-    case icloudAndArrowDownFill
+    case icloudAndArrowDownFill = "icloud.and.arrow.down.fill"
     /// icloud.and.arrow.up
-    case icloudAndArrowUp
+    case icloudAndArrowUp = "icloud.and.arrow.up"
     /// icloud.and.arrow.up.fill
-    case icloudAndArrowUpFill
+    case icloudAndArrowUpFill = "icloud.and.arrow.up.fill"
     /// x.squareroot
-    case xSquareroot
+    case xSquareroot = "x.squareroot"
     /// camera
-    case camera
+    case camera = "camera"
     /// camera.fill
-    case cameraFill
+    case cameraFill = "camera.fill"
     /// camera.circle
-    case cameraCircle
+    case cameraCircle = "camera.circle"
     /// camera.circle.fill
-    case cameraCircleFill
+    case cameraCircleFill = "camera.circle.fill"
     /// camera.on.rectangle
-    case cameraOnRectangle
+    case cameraOnRectangle = "camera.on.rectangle"
     /// camera.on.rectangle.fill
-    case cameraOnRectangleFill
+    case cameraOnRectangleFill = "camera.on.rectangle.fill"
     /// message
-    case message
+    case message = "message"
     /// message.fill
-    case messageFill
+    case messageFill = "message.fill"
     /// message.circle
-    case messageCircle
+    case messageCircle = "message.circle"
     /// message.circle.fill
-    case messageCircleFill
+    case messageCircleFill = "message.circle.fill"
     /// bubble.right
-    case bubbleRight
+    case bubbleRight = "bubble.right"
     /// bubble.right.fill
-    case bubbleRightFill
+    case bubbleRightFill = "bubble.right.fill"
     /// bubble.left
-    case bubbleLeft
+    case bubbleLeft = "bubble.left"
     /// bubble.left.fill
-    case bubbleLeftFill
+    case bubbleLeftFill = "bubble.left.fill"
     /// exclamationmark.bubble
-    case exclamationmarkBubble
+    case exclamationmarkBubble = "exclamationmark.bubble"
     /// exclamationmark.bubble.fill
-    case exclamationmarkBubbleFill
+    case exclamationmarkBubbleFill = "exclamationmark.bubble.fill"
     /// quote.bubble
-    case quoteBubble
+    case quoteBubble = "quote.bubble"
     /// quote.bubble.fill
-    case quoteBubbleFill
+    case quoteBubbleFill = "quote.bubble.fill"
     /// text.bubble
-    case textBubble
+    case textBubble = "text.bubble"
     /// text.bubble.fill
-    case textBubbleFill
+    case textBubbleFill = "text.bubble.fill"
     /// captions.bubble
-    case captionsBubble
+    case captionsBubble = "captions.bubble"
     /// captions.bubble.fill
-    case captionsBubbleFill
+    case captionsBubbleFill = "captions.bubble.fill"
     /// plus.bubble
-    case plusBubble
+    case plusBubble = "plus.bubble"
     /// plus.bubble.fill
-    case plusBubbleFill
+    case plusBubbleFill = "plus.bubble.fill"
     /// bubble.middle.bottom
-    case bubbleMiddleBottom
+    case bubbleMiddleBottom = "bubble.middle.bottom"
     /// bubble.middle.bottom.fill
-    case bubbleMiddleBottomFill
+    case bubbleMiddleBottomFill = "bubble.middle.bottom.fill"
     /// bubble.middle.top
-    case bubbleMiddleTop
+    case bubbleMiddleTop = "bubble.middle.top"
     /// bubble.middle.top.fill
-    case bubbleMiddleTopFill
+    case bubbleMiddleTopFill = "bubble.middle.top.fill"
     /// bubble.left.and.bubble.right
-    case bubbleLeftAndBubbleRight
+    case bubbleLeftAndBubbleRight = "bubble.left.and.bubble.right"
     /// bubble.left.and.bubble.right.fill
-    case bubbleLeftAndBubbleRightFill
+    case bubbleLeftAndBubbleRightFill = "bubble.left.and.bubble.right.fill"
     /// phone
-    case phone
+    case phone = "phone"
     /// phone.fill
-    case phoneFill
+    case phoneFill = "phone.fill"
     /// phone.circle
-    case phoneCircle
+    case phoneCircle = "phone.circle"
     /// phone.circle.fill
-    case phoneCircleFill
+    case phoneCircleFill = "phone.circle.fill"
     /// phone.badge.plus
-    case phoneBadgePlus
+    case phoneBadgePlus = "phone.badge.plus"
     /// phone.fill.badge.plus
-    case phoneFillBadgePlus
+    case phoneFillBadgePlus = "phone.fill.badge.plus"
     /// phone.arrow.up.right
-    case phoneArrowUpRight
+    case phoneArrowUpRight = "phone.arrow.up.right"
     /// phone.arrow.down.left
-    case phoneArrowDownLeft
+    case phoneArrowDownLeft = "phone.arrow.down.left"
     /// phone.arrow.right
-    case phoneArrowRight
+    case phoneArrowRight = "phone.arrow.right"
     /// phone.down
-    case phoneDown
+    case phoneDown = "phone.down"
     /// phone.down.fill
-    case phoneDownFill
+    case phoneDownFill = "phone.down.fill"
     /// phone.down.circle
-    case phoneDownCircle
+    case phoneDownCircle = "phone.down.circle"
     /// phone.down.circle.fill
-    case phoneDownCircleFill
+    case phoneDownCircleFill = "phone.down.circle.fill"
     /// teletype
-    case teletype
+    case teletype = "teletype"
     /// teletype.answer
-    case teletypeAnswer
+    case teletypeAnswer = "teletype.answer"
     /// video
-    case video
+    case video = "video"
     /// video.fill
-    case videoFill
+    case videoFill = "video.fill"
     /// video.circle
-    case videoCircle
+    case videoCircle = "video.circle"
     /// video.circle.fill
-    case videoCircleFill
+    case videoCircleFill = "video.circle.fill"
     /// video.slash
-    case videoSlash
+    case videoSlash = "video.slash"
     /// video.slash.fill
-    case videoSlashFill
+    case videoSlashFill = "video.slash.fill"
     /// video.badge.plus
-    case videoBadgePlus
+    case videoBadgePlus = "video.badge.plus"
     /// arrow.up.right.video
-    case arrowUpRightVideo
+    case arrowUpRightVideo = "arrow.up.right.video"
     /// arrow.up.right.video.fill
-    case arrowUpRightVideoFill
+    case arrowUpRightVideoFill = "arrow.up.right.video.fill"
     /// arrow.down.left.video
-    case arrowDownLeftVideo
+    case arrowDownLeftVideo = "arrow.down.left.video"
     /// arrow.down.left.video.fill
-    case arrowDownLeftVideoFill
+    case arrowDownLeftVideoFill = "arrow.down.left.video.fill"
     /// questionmark.video
-    case questionmarkVideo
+    case questionmarkVideo = "questionmark.video"
     /// questionmark.video.fill
-    case questionmarkVideoFill
+    case questionmarkVideoFill = "questionmark.video.fill"
     /// envelope
-    case envelope
+    case envelope = "envelope"
     /// envelope.fill
-    case envelopeFill
+    case envelopeFill = "envelope.fill"
     /// envelope.circle
-    case envelopeCircle
+    case envelopeCircle = "envelope.circle"
     /// envelope.circle.fill
-    case envelopeCircleFill
+    case envelopeCircleFill = "envelope.circle.fill"
     /// envelope.open
-    case envelopeOpen
+    case envelopeOpen = "envelope.open"
     /// envelope.open.fill
-    case envelopeOpenFill
+    case envelopeOpenFill = "envelope.open.fill"
     /// envelope.badge
-    case envelopeBadge
+    case envelopeBadge = "envelope.badge"
     /// envelope.badge.fill
-    case envelopeBadgeFill
+    case envelopeBadgeFill = "envelope.badge.fill"
     /// gear
-    case gear
+    case gear = "gear"
     /// signature
-    case signature
+    case signature = "signature"
     /// scissors
-    case scissors
+    case scissors = "scissors"
     /// ellipsis
-    case ellipsis
+    case ellipsis = "ellipsis"
     /// ellipsis.circle
-    case ellipsisCircle
+    case ellipsisCircle = "ellipsis.circle"
     /// ellipsis.circle.fill
-    case ellipsisCircleFill
+    case ellipsisCircleFill = "ellipsis.circle.fill"
     /// bag
-    case bag
+    case bag = "bag"
     /// bag.fill
-    case bagFill
+    case bagFill = "bag.fill"
     /// bag.badge.plus
-    case bagBadgePlus
+    case bagBadgePlus = "bag.badge.plus"
     /// bag.fill.badge.plus
-    case bagFillBadgePlus
+    case bagFillBadgePlus = "bag.fill.badge.plus"
     /// bag.badge.minus
-    case bagBadgeMinus
+    case bagBadgeMinus = "bag.badge.minus"
     /// bag.fill.badge.minus
-    case bagFillBadgeMinus
+    case bagFillBadgeMinus = "bag.fill.badge.minus"
     /// cart
-    case cart
+    case cart = "cart"
     /// cart.fill
-    case cartFill
+    case cartFill = "cart.fill"
     /// cart.badge.plus
-    case cartBadgePlus
+    case cartBadgePlus = "cart.badge.plus"
     /// cart.fill.badge.plus
-    case cartFillBadgePlus
+    case cartFillBadgePlus = "cart.fill.badge.plus"
     /// cart.badge.minus
-    case cartBadgeMinus
+    case cartBadgeMinus = "cart.badge.minus"
     /// cart.fill.badge.minus
-    case cartFillBadgeMinus
+    case cartFillBadgeMinus = "cart.fill.badge.minus"
     /// creditcard
-    case creditcard
+    case creditcard = "creditcard"
     /// creditcard.fill
-    case creditcardFill
+    case creditcardFill = "creditcard.fill"
     /// wand.and.rays
-    case wandAndRays
+    case wandAndRays = "wand.and.rays"
     /// wand.and.rays.inverse
-    case wandAndRaysInverse
+    case wandAndRaysInverse = "wand.and.rays.inverse"
     /// crop
-    case crop
+    case crop = "crop"
     /// crop.rotate
-    case cropRotate
+    case cropRotate = "crop.rotate"
     /// nosign
-    case nosign
+    case nosign = "nosign"
     /// metronome
-    case metronome
+    case metronome = "metronome"
     /// tuningfork
-    case tuningfork
+    case tuningfork = "tuningfork"
     /// paintbrush
-    case paintbrush
+    case paintbrush = "paintbrush"
     /// paintbrush.fill
-    case paintbrushFill
+    case paintbrushFill = "paintbrush.fill"
     /// hammer
-    case hammer
+    case hammer = "hammer"
     /// hammer.fill
-    case hammerFill
+    case hammerFill = "hammer.fill"
     /// eyedropper
-    case eyedropper
+    case eyedropper = "eyedropper"
     /// eyedropper.halffull
-    case eyedropperHalffull
+    case eyedropperHalffull = "eyedropper.halffull"
     /// eyedropper.full
-    case eyedropperFull
+    case eyedropperFull = "eyedropper.full"
     /// printer
-    case printer
+    case printer = "printer"
     /// printer.fill
-    case printerFill
+    case printerFill = "printer.fill"
     /// briefcase
-    case briefcase
+    case briefcase = "briefcase"
     /// briefcase.fill
-    case briefcaseFill
+    case briefcaseFill = "briefcase.fill"
     /// house
-    case house
+    case house = "house"
     /// house.fill
-    case houseFill
+    case houseFill = "house.fill"
     /// lightbulb
-    case lightbulb
+    case lightbulb = "lightbulb"
     /// lightbulb.fill
-    case lightbulbFill
+    case lightbulbFill = "lightbulb.fill"
     /// lightbulb.slash
-    case lightbulbSlash
+    case lightbulbSlash = "lightbulb.slash"
     /// lightbulb.slash.fill
-    case lightbulbSlashFill
+    case lightbulbSlashFill = "lightbulb.slash.fill"
     /// bed.double
-    case bedDouble
+    case bedDouble = "bed.double"
     /// bed.double.fill
-    case bedDoubleFill
+    case bedDoubleFill = "bed.double.fill"
     /// lock
-    case lock
+    case lock = "lock"
     /// lock.fill
-    case lockFill
+    case lockFill = "lock.fill"
     /// lock.circle
-    case lockCircle
+    case lockCircle = "lock.circle"
     /// lock.circle.fill
-    case lockCircleFill
+    case lockCircleFill = "lock.circle.fill"
     /// lock.shield
-    case lockShield
+    case lockShield = "lock.shield"
     /// lock.shield.fill
-    case lockShieldFill
+    case lockShieldFill = "lock.shield.fill"
     /// lock.slash
-    case lockSlash
+    case lockSlash = "lock.slash"
     /// lock.slash.fill
-    case lockSlashFill
+    case lockSlashFill = "lock.slash.fill"
     /// lock.open
-    case lockOpen
+    case lockOpen = "lock.open"
     /// lock.open.fill
-    case lockOpenFill
+    case lockOpenFill = "lock.open.fill"
     /// lock.rotation
-    case lockRotation
+    case lockRotation = "lock.rotation"
     /// wifi
-    case wifi
+    case wifi = "wifi"
     /// wifi.slash
-    case wifiSlash
+    case wifiSlash = "wifi.slash"
     /// wifi.exclamationmark
-    case wifiExclamationmark
+    case wifiExclamationmark = "wifi.exclamationmark"
     /// pin
-    case pin
+    case pin = "pin"
     /// pin.fill
-    case pinFill
+    case pinFill = "pin.fill"
     /// pin.slash
-    case pinSlash
+    case pinSlash = "pin.slash"
     /// pin.slash.fill
-    case pinSlashFill
+    case pinSlashFill = "pin.slash.fill"
     /// mappin
-    case mappin
+    case mappin = "mappin"
     /// mappin.slash
-    case mappinSlash
+    case mappinSlash = "mappin.slash"
     /// mappin.and.ellipse
-    case mappinAndEllipse
+    case mappinAndEllipse = "mappin.and.ellipse"
     /// map
-    case map
+    case map = "map"
     /// map.fill
-    case mapFill
+    case mapFill = "map.fill"
     /// safari
-    case safari
+    case safari = "safari"
     /// safari.fill
-    case safariFill
+    case safariFill = "safari.fill"
     /// rotate.left
-    case rotateLeft
+    case rotateLeft = "rotate.left"
     /// rotate.left.fill
-    case rotateLeftFill
+    case rotateLeftFill = "rotate.left.fill"
     /// rotate.right
-    case rotateRight
+    case rotateRight = "rotate.right"
     /// rotate.right.fill
-    case rotateRightFill
+    case rotateRightFill = "rotate.right.fill"
     /// selection.pin.in.out
-    case selectionPinInOut
+    case selectionPinInOut = "selection.pin.in.out"
     /// faceid
-    case faceid
+    case faceid = "faceid"
     /// desktopcomputer
-    case desktopcomputer
+    case desktopcomputer = "desktopcomputer"
     /// pano
-    case pano
+    case pano = "pano"
     /// pano.fill
-    case panoFill
+    case panoFill = "pano.fill"
     /// headphones
-    case headphones
+    case headphones = "headphones"
     /// hifispeaker
-    case hifispeaker
+    case hifispeaker = "hifispeaker"
     /// hifispeaker.fill
-    case hifispeakerFill
+    case hifispeakerFill = "hifispeaker.fill"
     /// tv
-    case tv
+    case tv = "tv"
     /// tv.fill
-    case tvFill
+    case tvFill = "tv.fill"
     /// tv.circle
-    case tvCircle
+    case tvCircle = "tv.circle"
     /// tv.circle.fill
-    case tvCircleFill
+    case tvCircleFill = "tv.circle.fill"
     /// dot.radiowaves.left.and.right
-    case dotRadiowavesLeftAndRight
+    case dotRadiowavesLeftAndRight = "dot.radiowaves.left.and.right"
     /// dot.radiowaves.right
-    case dotRadiowavesRight
+    case dotRadiowavesRight = "dot.radiowaves.right"
     /// antenna.radiowaves.left.and.right
-    case antennaRadiowavesLeftAndRight
+    case antennaRadiowavesLeftAndRight = "antenna.radiowaves.left.and.right"
     /// guitars
-    case guitars
+    case guitars = "guitars"
     /// airplane
-    case airplane
+    case airplane = "airplane"
     /// car.fill
-    case carFill
+    case carFill = "car.fill"
     /// tram.fill
-    case tramFill
+    case tramFill = "tram.fill"
     /// bandage
-    case bandage
+    case bandage = "bandage"
     /// bandage.fill
-    case bandageFill
+    case bandageFill = "bandage.fill"
     /// staroflife
-    case staroflife
+    case staroflife = "staroflife"
     /// staroflife.fill
-    case staroflifeFill
+    case staroflifeFill = "staroflife.fill"
     /// hare
-    case hare
+    case hare = "hare"
     /// hare.fill
-    case hareFill
+    case hareFill = "hare.fill"
     /// tortoise
-    case tortoise
+    case tortoise = "tortoise"
     /// tortoise.fill
-    case tortoiseFill
+    case tortoiseFill = "tortoise.fill"
     /// ant
-    case ant
+    case ant = "ant"
     /// ant.fill
-    case antFill
+    case antFill = "ant.fill"
     /// ant.circle
-    case antCircle
+    case antCircle = "ant.circle"
     /// ant.circle.fill
-    case antCircleFill
+    case antCircleFill = "ant.circle.fill"
     /// film
-    case film
+    case film = "film"
     /// film.fill
-    case filmFill
+    case filmFill = "film.fill"
     /// eye
-    case eye
+    case eye = "eye"
     /// eye.fill
-    case eyeFill
+    case eyeFill = "eye.fill"
     /// eye.slash
-    case eyeSlash
+    case eyeSlash = "eye.slash"
     /// eye.slash.fill
-    case eyeSlashFill
+    case eyeSlashFill = "eye.slash.fill"
     /// eyeglasses
-    case eyeglasses
+    case eyeglasses = "eyeglasses"
     /// ear
-    case ear
+    case ear = "ear"
     /// hand.raised
-    case handRaised
+    case handRaised = "hand.raised"
     /// hand.raised.fill
-    case handRaisedFill
+    case handRaisedFill = "hand.raised.fill"
     /// hand.raised.slash
-    case handRaisedSlash
+    case handRaisedSlash = "hand.raised.slash"
     /// hand.raised.slash.fill
-    case handRaisedSlashFill
+    case handRaisedSlashFill = "hand.raised.slash.fill"
     /// hand.thumbsup
-    case handThumbsup
+    case handThumbsup = "hand.thumbsup"
     /// hand.thumbsup.fill
-    case handThumbsupFill
+    case handThumbsupFill = "hand.thumbsup.fill"
     /// hand.thumbsdown
-    case handThumbsdown
+    case handThumbsdown = "hand.thumbsdown"
     /// hand.thumbsdown.fill
-    case handThumbsdownFill
+    case handThumbsdownFill = "hand.thumbsdown.fill"
     /// hand.draw
-    case handDraw
+    case handDraw = "hand.draw"
     /// hand.draw.fill
-    case handDrawFill
+    case handDrawFill = "hand.draw.fill"
     /// hand.point.left
-    case handPointLeft
+    case handPointLeft = "hand.point.left"
     /// hand.point.left.fill
-    case handPointLeftFill
+    case handPointLeftFill = "hand.point.left.fill"
     /// hand.point.right
-    case handPointRight
+    case handPointRight = "hand.point.right"
     /// hand.point.right.fill
-    case handPointRightFill
+    case handPointRightFill = "hand.point.right.fill"
     /// qrcode
-    case qrcode
+    case qrcode = "qrcode"
     /// barcode
-    case barcode
+    case barcode = "barcode"
     /// viewfinder
-    case viewfinder
+    case viewfinder = "viewfinder"
     /// viewfinder.circle
-    case viewfinderCircle
+    case viewfinderCircle = "viewfinder.circle"
     /// viewfinder.circle.fill
-    case viewfinderCircleFill
+    case viewfinderCircleFill = "viewfinder.circle.fill"
     /// barcode.viewfinder
-    case barcodeViewfinder
+    case barcodeViewfinder = "barcode.viewfinder"
     /// qrcode.viewfinder
-    case qrcodeViewfinder
+    case qrcodeViewfinder = "qrcode.viewfinder"
     /// camera.viewfinder
-    case cameraViewfinder
+    case cameraViewfinder = "camera.viewfinder"
     /// photo
-    case photo
+    case photo = "photo"
     /// photo.fill
-    case photoFill
+    case photoFill = "photo.fill"
     /// rectangle.badge.checkmark
-    case rectangleBadgeCheckmark
+    case rectangleBadgeCheckmark = "rectangle.badge.checkmark"
     /// rectangle.fill.badge.checkmark
-    case rectangleFillBadgeCheckmark
+    case rectangleFillBadgeCheckmark = "rectangle.fill.badge.checkmark"
     /// rectangle.badge.xmark
-    case rectangleBadgeXmark
+    case rectangleBadgeXmark = "rectangle.badge.xmark"
     /// rectangle.fill.badge.xmark
-    case rectangleFillBadgeXmark
+    case rectangleFillBadgeXmark = "rectangle.fill.badge.xmark"
     /// photo.on.rectangle
-    case photoOnRectangle
+    case photoOnRectangle = "photo.on.rectangle"
     /// photo.fill.on.rectangle.fill
-    case photoFillOnRectangleFill
+    case photoFillOnRectangleFill = "photo.fill.on.rectangle.fill"
     /// rectangle.on.rectangle.angled
-    case rectangleOnRectangleAngled
+    case rectangleOnRectangleAngled = "rectangle.on.rectangle.angled"
     /// rectangle.fill.on.rectangle.angled.fill
-    case rectangleFillOnRectangleAngledFill
+    case rectangleFillOnRectangleAngledFill = "rectangle.fill.on.rectangle.angled.fill"
     /// rectangle.stack
-    case rectangleStack
+    case rectangleStack = "rectangle.stack"
     /// rectangle.stack.fill
-    case rectangleStackFill
+    case rectangleStackFill = "rectangle.stack.fill"
     /// rectangle.stack.badge.plus
-    case rectangleStackBadgePlus
+    case rectangleStackBadgePlus = "rectangle.stack.badge.plus"
     /// rectangle.stack.fill.badge.plus
-    case rectangleStackFillBadgePlus
+    case rectangleStackFillBadgePlus = "rectangle.stack.fill.badge.plus"
     /// rectangle.stack.badge.minus
-    case rectangleStackBadgeMinus
+    case rectangleStackBadgeMinus = "rectangle.stack.badge.minus"
     /// rectangle.stack.fill.badge.minus
-    case rectangleStackFillBadgeMinus
+    case rectangleStackFillBadgeMinus = "rectangle.stack.fill.badge.minus"
     /// rectangle.stack.badge.person.crop
-    case rectangleStackBadgePersonCrop
+    case rectangleStackBadgePersonCrop = "rectangle.stack.badge.person.crop"
     /// sidebar.left
-    case sidebarLeft
+    case sidebarLeft = "sidebar.left"
     /// sidebar.right
-    case sidebarRight
+    case sidebarRight = "sidebar.right"
     /// squares.below.rectangle
-    case squaresBelowRectangle
+    case squaresBelowRectangle = "squares.below.rectangle"
     /// macwindow
-    case macwindow
+    case macwindow = "macwindow"
     /// uiwindow.split.2x1
-    case uiwindowSplit2x1
+    case uiwindowSplit2x1 = "uiwindow.split.2x1"
     /// square.and.line.vertical.and.square
-    case squareAndLineVerticalAndSquare
+    case squareAndLineVerticalAndSquare = "square.and.line.vertical.and.square"
     /// flowchart
-    case flowchart
+    case flowchart = "flowchart"
     /// flowchart.fill
-    case flowchartFill
+    case flowchartFill = "flowchart.fill"
     /// slider.horizontal.3
-    case sliderHorizontal3
+    case sliderHorizontal3 = "slider.horizontal.3"
     /// slider.horizontal.below.rectangle
-    case sliderHorizontalBelowRectangle
+    case sliderHorizontalBelowRectangle = "slider.horizontal.below.rectangle"
     /// cube
-    case cube
+    case cube = "cube"
     /// cube.fill
-    case cubeFill
+    case cubeFill = "cube.fill"
     /// arkit
-    case arkit
+    case arkit = "arkit"
     /// square.stack.3d.down.right
-    case squareStack3dDownRight
+    case squareStack3dDownRight = "square.stack.3d.down.right"
     /// square.stack.3d.down.right.fill
-    case squareStack3dDownRightFill
+    case squareStack3dDownRightFill = "square.stack.3d.down.right.fill"
     /// square.stack.3d.up
-    case squareStack3dUp
+    case squareStack3dUp = "square.stack.3d.up"
     /// square.stack.3d.up.fill
-    case squareStack3dUpFill
+    case squareStack3dUpFill = "square.stack.3d.up.fill"
     /// square.stack.3d.up.slash
-    case squareStack3dUpSlash
+    case squareStack3dUpSlash = "square.stack.3d.up.slash"
     /// square.stack.3d.up.slash.fill
-    case squareStack3dUpSlashFill
+    case squareStack3dUpSlashFill = "square.stack.3d.up.slash.fill"
     /// livephoto
-    case livephoto
+    case livephoto = "livephoto"
     /// livephoto.slash
-    case livephotoSlash
+    case livephotoSlash = "livephoto.slash"
     /// livephoto.play
-    case livephotoPlay
+    case livephotoPlay = "livephoto.play"
     /// f.cursive
-    case fCursive
+    case fCursive = "f.cursive"
     /// f.cursive.circle
-    case fCursiveCircle
+    case fCursiveCircle = "f.cursive.circle"
     /// f.cursive.circle.fill
-    case fCursiveCircleFill
+    case fCursiveCircleFill = "f.cursive.circle.fill"
     /// scope
-    case scope
+    case scope = "scope"
     /// helm
-    case helm
+    case helm = "helm"
     /// clock
-    case clock
+    case clock = "clock"
     /// clock.fill
-    case clockFill
+    case clockFill = "clock.fill"
     /// alarm
-    case alarm
+    case alarm = "alarm"
     /// alarm.fill
-    case alarmFill
+    case alarmFill = "alarm.fill"
     /// stopwatch
-    case stopwatch
+    case stopwatch = "stopwatch"
     /// stopwatch.fill
-    case stopwatchFill
+    case stopwatchFill = "stopwatch.fill"
     /// timer
-    case timer
+    case timer = "timer"
     /// gamecontroller
-    case gamecontroller
+    case gamecontroller = "gamecontroller"
     /// gamecontroller.fill
-    case gamecontrollerFill
+    case gamecontrollerFill = "gamecontroller.fill"
     /// rectangle.compress.vertical
-    case rectangleCompressVertical
+    case rectangleCompressVertical = "rectangle.compress.vertical"
     /// rectangle.expand.vertical
-    case rectangleExpandVertical
+    case rectangleExpandVertical = "rectangle.expand.vertical"
     /// rectangle.and.arrow.up.right.and.arrow.down.left
-    case rectangleAndArrowUpRightAndArrowDownLeft
+    case rectangleAndArrowUpRightAndArrowDownLeft = "rectangle.and.arrow.up.right.and.arrow.down.left"
     /// rectangle.and.arrow.up.right.and.arrow.down.left.slash
-    case rectangleAndArrowUpRightAndArrowDownLeftSlash
+    case rectangleAndArrowUpRightAndArrowDownLeftSlash = "rectangle.and.arrow.up.right.and.arrow.down.left.slash"
     /// chart.bar
-    case chartBar
+    case chartBar = "chart.bar"
     /// chart.bar.fill
-    case chartBarFill
+    case chartBarFill = "chart.bar.fill"
     /// chart.pie
-    case chartPie
+    case chartPie = "chart.pie"
     /// chart.pie.fill
-    case chartPieFill
+    case chartPieFill = "chart.pie.fill"
     /// burst
-    case burst
+    case burst = "burst"
     /// burst.fill
-    case burstFill
+    case burstFill = "burst.fill"
     /// waveform.path.ecg
-    case waveformPathEcg
+    case waveformPathEcg = "waveform.path.ecg"
     /// waveform.path
-    case waveformPath
+    case waveformPath = "waveform.path"
     /// waveform.path.badge.plus
-    case waveformPathBadgePlus
+    case waveformPathBadgePlus = "waveform.path.badge.plus"
     /// waveform.path.badge.minus
-    case waveformPathBadgeMinus
+    case waveformPathBadgeMinus = "waveform.path.badge.minus"
     /// waveform
-    case waveform
+    case waveform = "waveform"
     /// waveform.circle
-    case waveformCircle
+    case waveformCircle = "waveform.circle"
     /// waveform.circle.fill
-    case waveformCircleFill
+    case waveformCircleFill = "waveform.circle.fill"
     /// gift
-    case gift
+    case gift = "gift"
     /// gift.fill
-    case giftFill
+    case giftFill = "gift.fill"
     /// hourglass
-    case hourglass
+    case hourglass = "hourglass"
     /// purchased
-    case purchased
+    case purchased = "purchased"
     /// purchased.circle
-    case purchasedCircle
+    case purchasedCircle = "purchased.circle"
     /// purchased.circle.fill
-    case purchasedCircleFill
+    case purchasedCircleFill = "purchased.circle.fill"
     /// perspective
-    case perspective
+    case perspective = "perspective"
     /// skew
-    case skew
+    case skew = "skew"
     /// grid
-    case grid
+    case grid = "grid"
     /// grid.circle
-    case gridCircle
+    case gridCircle = "grid.circle"
     /// grid.circle.fill
-    case gridCircleFill
+    case gridCircleFill = "grid.circle.fill"
     /// burn
-    case burn
+    case burn = "burn"
     /// recordingtape
-    case recordingtape
+    case recordingtape = "recordingtape"
     /// list.bullet
-    case listBullet
+    case listBullet = "list.bullet"
     /// list.dash
-    case listDash
+    case listDash = "list.dash"
     /// list.bullet.indent
-    case listBulletIndent
+    case listBulletIndent = "list.bullet.indent"
     /// list.number
-    case listNumber
+    case listNumber = "list.number"
     /// increase.indent
-    case increaseIndent
+    case increaseIndent = "increase.indent"
     /// decrease.indent
-    case decreaseIndent
+    case decreaseIndent = "decrease.indent"
     /// decrease.quotelevel
-    case decreaseQuotelevel
+    case decreaseQuotelevel = "decrease.quotelevel"
     /// increase.quotelevel
-    case increaseQuotelevel
+    case increaseQuotelevel = "increase.quotelevel"
     /// list.bullet.below.rectangle
-    case listBulletBelowRectangle
+    case listBulletBelowRectangle = "list.bullet.below.rectangle"
     /// text.badge.plus
-    case textBadgePlus
+    case textBadgePlus = "text.badge.plus"
     /// text.badge.minus
-    case textBadgeMinus
+    case textBadgeMinus = "text.badge.minus"
     /// text.badge.checkmark
-    case textBadgeCheckmark
+    case textBadgeCheckmark = "text.badge.checkmark"
     /// text.badge.xmark
-    case textBadgeXmark
+    case textBadgeXmark = "text.badge.xmark"
     /// text.badge.star
-    case textBadgeStar
+    case textBadgeStar = "text.badge.star"
     /// text.insert
-    case textInsert
+    case textInsert = "text.insert"
     /// text.append
-    case textAppend
+    case textAppend = "text.append"
     /// text.quote
-    case textQuote
+    case textQuote = "text.quote"
     /// text.alignleft
-    case textAlignleft
+    case textAlignleft = "text.alignleft"
     /// text.aligncenter
-    case textAligncenter
+    case textAligncenter = "text.aligncenter"
     /// text.alignright
-    case textAlignright
+    case textAlignright = "text.alignright"
     /// text.justify
-    case textJustify
+    case textJustify = "text.justify"
     /// textformat.size
-    case textformatSize
+    case textformatSize = "textformat.size"
     /// textformat
-    case textformat
+    case textformat = "textformat"
     /// textformat.alt
-    case textformatAlt
+    case textformatAlt = "textformat.alt"
     /// textformat.superscript
-    case textformatSuperscript
+    case textformatSuperscript = "textformat.superscript"
     /// textformat.subscript
-    case textformatSubscript
+    case textformatSubscript = "textformat.subscript"
     /// bold
-    case bold
+    case bold = "bold"
     /// italic
-    case italic
+    case italic = "italic"
     /// underline
-    case underline
+    case underline = "underline"
     /// strikethrough
-    case strikethrough
+    case strikethrough = "strikethrough"
     /// bold.italic.underline
-    case boldItalicUnderline
+    case boldItalicUnderline = "bold.italic.underline"
     /// bold.underline
-    case boldUnderline
+    case boldUnderline = "bold.underline"
     /// view.2d
-    case view2d
+    case view2d = "view.2d"
     /// view.3d
-    case view3d
+    case view3d = "view.3d"
     /// fx
-    case fx
+    case fx = "fx"
     /// sum
-    case sum
+    case sum = "sum"
     /// percent
-    case percent
+    case percent = "percent"
     /// function
-    case function
+    case function = "function"
     /// info
-    case info
+    case info = "info"
     /// info.circle
-    case infoCircle
+    case infoCircle = "info.circle"
     /// info.circle.fill
-    case infoCircleFill
+    case infoCircleFill = "info.circle.fill"
     /// at
-    case at
+    case at = "at"
     /// at.badge.plus
-    case atBadgePlus
+    case atBadgePlus = "at.badge.plus"
     /// at.badge.minus
-    case atBadgeMinus
+    case atBadgeMinus = "at.badge.minus"
     /// questionmark
-    case questionmark
+    case questionmark = "questionmark"
     /// questionmark.circle
-    case questionmarkCircle
+    case questionmarkCircle = "questionmark.circle"
     /// questionmark.circle.fill
-    case questionmarkCircleFill
+    case questionmarkCircleFill = "questionmark.circle.fill"
     /// questionmark.square
-    case questionmarkSquare
+    case questionmarkSquare = "questionmark.square"
     /// questionmark.square.fill
-    case questionmarkSquareFill
+    case questionmarkSquareFill = "questionmark.square.fill"
     /// questionmark.diamond
-    case questionmarkDiamond
+    case questionmarkDiamond = "questionmark.diamond"
     /// questionmark.diamond.fill
-    case questionmarkDiamondFill
+    case questionmarkDiamondFill = "questionmark.diamond.fill"
     /// exclamationmark
-    case exclamationmark
+    case exclamationmark = "exclamationmark"
     /// exclamationmark.circle
-    case exclamationmarkCircle
+    case exclamationmarkCircle = "exclamationmark.circle"
     /// exclamationmark.circle.fill
-    case exclamationmarkCircleFill
+    case exclamationmarkCircleFill = "exclamationmark.circle.fill"
     /// exclamationmark.square
-    case exclamationmarkSquare
+    case exclamationmarkSquare = "exclamationmark.square"
     /// exclamationmark.square.fill
-    case exclamationmarkSquareFill
+    case exclamationmarkSquareFill = "exclamationmark.square.fill"
     /// exclamationmark.octagon
-    case exclamationmarkOctagon
+    case exclamationmarkOctagon = "exclamationmark.octagon"
     /// exclamationmark.octagon.fill
-    case exclamationmarkOctagonFill
+    case exclamationmarkOctagonFill = "exclamationmark.octagon.fill"
     /// exclamationmark.shield
-    case exclamationmarkShield
+    case exclamationmarkShield = "exclamationmark.shield"
     /// exclamationmark.shield.fill
-    case exclamationmarkShieldFill
+    case exclamationmarkShieldFill = "exclamationmark.shield.fill"
     /// plus
-    case plus
+    case plus = "plus"
     /// plus.circle
-    case plusCircle
+    case plusCircle = "plus.circle"
     /// plus.circle.fill
-    case plusCircleFill
+    case plusCircleFill = "plus.circle.fill"
     /// plus.square
-    case plusSquare
+    case plusSquare = "plus.square"
     /// plus.square.fill
-    case plusSquareFill
+    case plusSquareFill = "plus.square.fill"
     /// plus.rectangle
-    case plusRectangle
+    case plusRectangle = "plus.rectangle"
     /// plus.rectangle.fill
-    case plusRectangleFill
+    case plusRectangleFill = "plus.rectangle.fill"
     /// minus
-    case minus
+    case minus = "minus"
     /// minus.circle
-    case minusCircle
+    case minusCircle = "minus.circle"
     /// minus.circle.fill
-    case minusCircleFill
+    case minusCircleFill = "minus.circle.fill"
     /// minus.square
-    case minusSquare
+    case minusSquare = "minus.square"
     /// minus.square.fill
-    case minusSquareFill
+    case minusSquareFill = "minus.square.fill"
     /// minus.rectangle
-    case minusRectangle
+    case minusRectangle = "minus.rectangle"
     /// minus.rectangle.fill
-    case minusRectangleFill
+    case minusRectangleFill = "minus.rectangle.fill"
     /// plusminus
-    case plusminus
+    case plusminus = "plusminus"
     /// plusminus.circle
-    case plusminusCircle
+    case plusminusCircle = "plusminus.circle"
     /// plusminus.circle.fill
-    case plusminusCircleFill
+    case plusminusCircleFill = "plusminus.circle.fill"
     /// multiply
-    case multiply
+    case multiply = "multiply"
     /// multiply.circle
-    case multiplyCircle
+    case multiplyCircle = "multiply.circle"
     /// multiply.circle.fill
-    case multiplyCircleFill
+    case multiplyCircleFill = "multiply.circle.fill"
     /// multiply.square
-    case multiplySquare
+    case multiplySquare = "multiply.square"
     /// multiply.square.fill
-    case multiplySquareFill
+    case multiplySquareFill = "multiply.square.fill"
     /// divide
-    case divide
+    case divide = "divide"
     /// divide.circle
-    case divideCircle
+    case divideCircle = "divide.circle"
     /// divide.circle.fill
-    case divideCircleFill
+    case divideCircleFill = "divide.circle.fill"
     /// divide.square
-    case divideSquare
+    case divideSquare = "divide.square"
     /// divide.square.fill
-    case divideSquareFill
+    case divideSquareFill = "divide.square.fill"
     /// equal
-    case equal
+    case equal = "equal"
     /// equal.circle
-    case equalCircle
+    case equalCircle = "equal.circle"
     /// equal.circle.fill
-    case equalCircleFill
+    case equalCircleFill = "equal.circle.fill"
     /// equal.square
-    case equalSquare
+    case equalSquare = "equal.square"
     /// equal.square.fill
-    case equalSquareFill
+    case equalSquareFill = "equal.square.fill"
     /// lessthan
-    case lessthan
+    case lessthan = "lessthan"
     /// lessthan.circle
-    case lessthanCircle
+    case lessthanCircle = "lessthan.circle"
     /// lessthan.circle.fill
-    case lessthanCircleFill
+    case lessthanCircleFill = "lessthan.circle.fill"
     /// lessthan.square
-    case lessthanSquare
+    case lessthanSquare = "lessthan.square"
     /// lessthan.square.fill
-    case lessthanSquareFill
+    case lessthanSquareFill = "lessthan.square.fill"
     /// greaterthan
-    case greaterthan
+    case greaterthan = "greaterthan"
     /// greaterthan.circle
-    case greaterthanCircle
+    case greaterthanCircle = "greaterthan.circle"
     /// greaterthan.circle.fill
-    case greaterthanCircleFill
+    case greaterthanCircleFill = "greaterthan.circle.fill"
     /// greaterthan.square
-    case greaterthanSquare
+    case greaterthanSquare = "greaterthan.square"
     /// greaterthan.square.fill
-    case greaterthanSquareFill
+    case greaterthanSquareFill = "greaterthan.square.fill"
     /// number
-    case number
+    case number = "number"
     /// number.circle
-    case numberCircle
+    case numberCircle = "number.circle"
     /// number.circle.fill
-    case numberCircleFill
+    case numberCircleFill = "number.circle.fill"
     /// number.square
-    case numberSquare
+    case numberSquare = "number.square"
     /// number.square.fill
-    case numberSquareFill
+    case numberSquareFill = "number.square.fill"
     /// xmark
-    case xmark
+    case xmark = "xmark"
     /// xmark.circle
-    case xmarkCircle
+    case xmarkCircle = "xmark.circle"
     /// xmark.circle.fill
-    case xmarkCircleFill
+    case xmarkCircleFill = "xmark.circle.fill"
     /// xmark.square
-    case xmarkSquare
+    case xmarkSquare = "xmark.square"
     /// xmark.square.fill
-    case xmarkSquareFill
+    case xmarkSquareFill = "xmark.square.fill"
     /// xmark.rectangle
-    case xmarkRectangle
+    case xmarkRectangle = "xmark.rectangle"
     /// xmark.rectangle.fill
-    case xmarkRectangleFill
+    case xmarkRectangleFill = "xmark.rectangle.fill"
     /// xmark.shield
-    case xmarkShield
+    case xmarkShield = "xmark.shield"
     /// xmark.shield.fill
-    case xmarkShieldFill
+    case xmarkShieldFill = "xmark.shield.fill"
     /// xmark.octagon
-    case xmarkOctagon
+    case xmarkOctagon = "xmark.octagon"
     /// xmark.octagon.fill
-    case xmarkOctagonFill
+    case xmarkOctagonFill = "xmark.octagon.fill"
     /// checkmark
-    case checkmark
+    case checkmark = "checkmark"
     /// checkmark.circle
-    case checkmarkCircle
+    case checkmarkCircle = "checkmark.circle"
     /// checkmark.circle.fill
-    case checkmarkCircleFill
+    case checkmarkCircleFill = "checkmark.circle.fill"
     /// checkmark.square
-    case checkmarkSquare
+    case checkmarkSquare = "checkmark.square"
     /// checkmark.square.fill
-    case checkmarkSquareFill
+    case checkmarkSquareFill = "checkmark.square.fill"
     /// checkmark.rectangle
-    case checkmarkRectangle
+    case checkmarkRectangle = "checkmark.rectangle"
     /// checkmark.rectangle.fill
-    case checkmarkRectangleFill
+    case checkmarkRectangleFill = "checkmark.rectangle.fill"
     /// checkmark.shield
-    case checkmarkShield
+    case checkmarkShield = "checkmark.shield"
     /// checkmark.shield.fill
-    case checkmarkShieldFill
+    case checkmarkShieldFill = "checkmark.shield.fill"
     /// chevron.left
-    case chevronLeft
+    case chevronLeft = "chevron.left"
     /// chevron.left.circle
-    case chevronLeftCircle
+    case chevronLeftCircle = "chevron.left.circle"
     /// chevron.left.circle.fill
-    case chevronLeftCircleFill
+    case chevronLeftCircleFill = "chevron.left.circle.fill"
     /// chevron.left.square
-    case chevronLeftSquare
+    case chevronLeftSquare = "chevron.left.square"
     /// chevron.left.square.fill
-    case chevronLeftSquareFill
+    case chevronLeftSquareFill = "chevron.left.square.fill"
     /// chevron.right
-    case chevronRight
+    case chevronRight = "chevron.right"
     /// chevron.right.circle
-    case chevronRightCircle
+    case chevronRightCircle = "chevron.right.circle"
     /// chevron.right.circle.fill
-    case chevronRightCircleFill
+    case chevronRightCircleFill = "chevron.right.circle.fill"
     /// chevron.right.square
-    case chevronRightSquare
+    case chevronRightSquare = "chevron.right.square"
     /// chevron.right.square.fill
-    case chevronRightSquareFill
+    case chevronRightSquareFill = "chevron.right.square.fill"
     /// chevron.left.2
-    case chevronLeft2
+    case chevronLeft2 = "chevron.left.2"
     /// chevron.right.2
-    case chevronRight2
+    case chevronRight2 = "chevron.right.2"
     /// chevron.up
-    case chevronUp
+    case chevronUp = "chevron.up"
     /// chevron.up.circle
-    case chevronUpCircle
+    case chevronUpCircle = "chevron.up.circle"
     /// chevron.up.circle.fill
-    case chevronUpCircleFill
+    case chevronUpCircleFill = "chevron.up.circle.fill"
     /// chevron.up.square
-    case chevronUpSquare
+    case chevronUpSquare = "chevron.up.square"
     /// chevron.up.square.fill
-    case chevronUpSquareFill
+    case chevronUpSquareFill = "chevron.up.square.fill"
     /// chevron.down
-    case chevronDown
+    case chevronDown = "chevron.down"
     /// chevron.down.circle
-    case chevronDownCircle
+    case chevronDownCircle = "chevron.down.circle"
     /// chevron.down.circle.fill
-    case chevronDownCircleFill
+    case chevronDownCircleFill = "chevron.down.circle.fill"
     /// chevron.down.square
-    case chevronDownSquare
+    case chevronDownSquare = "chevron.down.square"
     /// chevron.down.square.fill
-    case chevronDownSquareFill
+    case chevronDownSquareFill = "chevron.down.square.fill"
     /// chevron.up.chevron.down
-    case chevronUpChevronDown
+    case chevronUpChevronDown = "chevron.up.chevron.down"
     /// chevron.compact.up
-    case chevronCompactUp
+    case chevronCompactUp = "chevron.compact.up"
     /// chevron.compact.down
-    case chevronCompactDown
+    case chevronCompactDown = "chevron.compact.down"
     /// chevron.compact.left
-    case chevronCompactLeft
+    case chevronCompactLeft = "chevron.compact.left"
     /// chevron.compact.right
-    case chevronCompactRight
+    case chevronCompactRight = "chevron.compact.right"
     /// arrow.left
-    case arrowLeft
+    case arrowLeft = "arrow.left"
     /// arrow.left.circle
-    case arrowLeftCircle
+    case arrowLeftCircle = "arrow.left.circle"
     /// arrow.left.circle.fill
-    case arrowLeftCircleFill
+    case arrowLeftCircleFill = "arrow.left.circle.fill"
     /// arrow.left.square
-    case arrowLeftSquare
+    case arrowLeftSquare = "arrow.left.square"
     /// arrow.left.square.fill
-    case arrowLeftSquareFill
+    case arrowLeftSquareFill = "arrow.left.square.fill"
     /// arrow.right
-    case arrowRight
+    case arrowRight = "arrow.right"
     /// arrow.right.circle
-    case arrowRightCircle
+    case arrowRightCircle = "arrow.right.circle"
     /// arrow.right.circle.fill
-    case arrowRightCircleFill
+    case arrowRightCircleFill = "arrow.right.circle.fill"
     /// arrow.right.square
-    case arrowRightSquare
+    case arrowRightSquare = "arrow.right.square"
     /// arrow.right.square.fill
-    case arrowRightSquareFill
+    case arrowRightSquareFill = "arrow.right.square.fill"
     /// arrow.up
-    case arrowUp
+    case arrowUp = "arrow.up"
     /// arrow.up.circle
-    case arrowUpCircle
+    case arrowUpCircle = "arrow.up.circle"
     /// arrow.up.circle.fill
-    case arrowUpCircleFill
+    case arrowUpCircleFill = "arrow.up.circle.fill"
     /// arrow.up.square
-    case arrowUpSquare
+    case arrowUpSquare = "arrow.up.square"
     /// arrow.up.square.fill
-    case arrowUpSquareFill
+    case arrowUpSquareFill = "arrow.up.square.fill"
     /// arrow.down
-    case arrowDown
+    case arrowDown = "arrow.down"
     /// arrow.down.circle
-    case arrowDownCircle
+    case arrowDownCircle = "arrow.down.circle"
     /// arrow.down.circle.fill
-    case arrowDownCircleFill
+    case arrowDownCircleFill = "arrow.down.circle.fill"
     /// arrow.down.square
-    case arrowDownSquare
+    case arrowDownSquare = "arrow.down.square"
     /// arrow.down.square.fill
-    case arrowDownSquareFill
+    case arrowDownSquareFill = "arrow.down.square.fill"
     /// arrow.up.left
-    case arrowUpLeft
+    case arrowUpLeft = "arrow.up.left"
     /// arrow.up.left.circle
-    case arrowUpLeftCircle
+    case arrowUpLeftCircle = "arrow.up.left.circle"
     /// arrow.up.left.circle.fill
-    case arrowUpLeftCircleFill
+    case arrowUpLeftCircleFill = "arrow.up.left.circle.fill"
     /// arrow.up.left.square
-    case arrowUpLeftSquare
+    case arrowUpLeftSquare = "arrow.up.left.square"
     /// arrow.up.left.square.fill
-    case arrowUpLeftSquareFill
+    case arrowUpLeftSquareFill = "arrow.up.left.square.fill"
     /// arrow.up.right
-    case arrowUpRight
+    case arrowUpRight = "arrow.up.right"
     /// arrow.up.right.circle
-    case arrowUpRightCircle
+    case arrowUpRightCircle = "arrow.up.right.circle"
     /// arrow.up.right.circle.fill
-    case arrowUpRightCircleFill
+    case arrowUpRightCircleFill = "arrow.up.right.circle.fill"
     /// arrow.up.right.square
-    case arrowUpRightSquare
+    case arrowUpRightSquare = "arrow.up.right.square"
     /// arrow.up.right.square.fill
-    case arrowUpRightSquareFill
+    case arrowUpRightSquareFill = "arrow.up.right.square.fill"
     /// arrow.down.left
-    case arrowDownLeft
+    case arrowDownLeft = "arrow.down.left"
     /// arrow.down.left.circle
-    case arrowDownLeftCircle
+    case arrowDownLeftCircle = "arrow.down.left.circle"
     /// arrow.down.left.circle.fill
-    case arrowDownLeftCircleFill
+    case arrowDownLeftCircleFill = "arrow.down.left.circle.fill"
     /// arrow.down.left.square
-    case arrowDownLeftSquare
+    case arrowDownLeftSquare = "arrow.down.left.square"
     /// arrow.down.left.square.fill
-    case arrowDownLeftSquareFill
+    case arrowDownLeftSquareFill = "arrow.down.left.square.fill"
     /// arrow.down.right
-    case arrowDownRight
+    case arrowDownRight = "arrow.down.right"
     /// arrow.down.right.circle
-    case arrowDownRightCircle
+    case arrowDownRightCircle = "arrow.down.right.circle"
     /// arrow.down.right.circle.fill
-    case arrowDownRightCircleFill
+    case arrowDownRightCircleFill = "arrow.down.right.circle.fill"
     /// arrow.down.right.square
-    case arrowDownRightSquare
+    case arrowDownRightSquare = "arrow.down.right.square"
     /// arrow.down.right.square.fill
-    case arrowDownRightSquareFill
+    case arrowDownRightSquareFill = "arrow.down.right.square.fill"
     /// arrow.up.arrow.down
-    case arrowUpArrowDown
+    case arrowUpArrowDown = "arrow.up.arrow.down"
     /// arrow.up.arrow.down.circle
-    case arrowUpArrowDownCircle
+    case arrowUpArrowDownCircle = "arrow.up.arrow.down.circle"
     /// arrow.up.arrow.down.circle.fill
-    case arrowUpArrowDownCircleFill
+    case arrowUpArrowDownCircleFill = "arrow.up.arrow.down.circle.fill"
     /// arrow.up.arrow.down.square
-    case arrowUpArrowDownSquare
+    case arrowUpArrowDownSquare = "arrow.up.arrow.down.square"
     /// arrow.up.arrow.down.square.fill
-    case arrowUpArrowDownSquareFill
+    case arrowUpArrowDownSquareFill = "arrow.up.arrow.down.square.fill"
     /// arrow.turn.down.left
-    case arrowTurnDownLeft
+    case arrowTurnDownLeft = "arrow.turn.down.left"
     /// arrow.turn.up.left
-    case arrowTurnUpLeft
+    case arrowTurnUpLeft = "arrow.turn.up.left"
     /// arrow.turn.down.right
-    case arrowTurnDownRight
+    case arrowTurnDownRight = "arrow.turn.down.right"
     /// arrow.turn.up.right
-    case arrowTurnUpRight
+    case arrowTurnUpRight = "arrow.turn.up.right"
     /// arrow.turn.right.up
-    case arrowTurnRightUp
+    case arrowTurnRightUp = "arrow.turn.right.up"
     /// arrow.turn.left.up
-    case arrowTurnLeftUp
+    case arrowTurnLeftUp = "arrow.turn.left.up"
     /// arrow.turn.right.down
-    case arrowTurnRightDown
+    case arrowTurnRightDown = "arrow.turn.right.down"
     /// arrow.turn.left.down
-    case arrowTurnLeftDown
+    case arrowTurnLeftDown = "arrow.turn.left.down"
     /// arrow.uturn.left
-    case arrowUturnLeft
+    case arrowUturnLeft = "arrow.uturn.left"
     /// arrow.uturn.left.circle
-    case arrowUturnLeftCircle
+    case arrowUturnLeftCircle = "arrow.uturn.left.circle"
     /// arrow.uturn.left.circle.fill
-    case arrowUturnLeftCircleFill
+    case arrowUturnLeftCircleFill = "arrow.uturn.left.circle.fill"
     /// arrow.uturn.left.square
-    case arrowUturnLeftSquare
+    case arrowUturnLeftSquare = "arrow.uturn.left.square"
     /// arrow.uturn.left.square.fill
-    case arrowUturnLeftSquareFill
+    case arrowUturnLeftSquareFill = "arrow.uturn.left.square.fill"
     /// arrow.uturn.right
-    case arrowUturnRight
+    case arrowUturnRight = "arrow.uturn.right"
     /// arrow.uturn.right.circle
-    case arrowUturnRightCircle
+    case arrowUturnRightCircle = "arrow.uturn.right.circle"
     /// arrow.uturn.right.circle.fill
-    case arrowUturnRightCircleFill
+    case arrowUturnRightCircleFill = "arrow.uturn.right.circle.fill"
     /// arrow.uturn.right.square
-    case arrowUturnRightSquare
+    case arrowUturnRightSquare = "arrow.uturn.right.square"
     /// arrow.uturn.right.square.fill
-    case arrowUturnRightSquareFill
+    case arrowUturnRightSquareFill = "arrow.uturn.right.square.fill"
     /// arrow.uturn.up
-    case arrowUturnUp
+    case arrowUturnUp = "arrow.uturn.up"
     /// arrow.uturn.up.circle
-    case arrowUturnUpCircle
+    case arrowUturnUpCircle = "arrow.uturn.up.circle"
     /// arrow.uturn.up.circle.fill
-    case arrowUturnUpCircleFill
+    case arrowUturnUpCircleFill = "arrow.uturn.up.circle.fill"
     /// arrow.uturn.up.square
-    case arrowUturnUpSquare
+    case arrowUturnUpSquare = "arrow.uturn.up.square"
     /// arrow.uturn.up.square.fill
-    case arrowUturnUpSquareFill
+    case arrowUturnUpSquareFill = "arrow.uturn.up.square.fill"
     /// arrow.uturn.down
-    case arrowUturnDown
+    case arrowUturnDown = "arrow.uturn.down"
     /// arrow.uturn.down.circle
-    case arrowUturnDownCircle
+    case arrowUturnDownCircle = "arrow.uturn.down.circle"
     /// arrow.uturn.down.circle.fill
-    case arrowUturnDownCircleFill
+    case arrowUturnDownCircleFill = "arrow.uturn.down.circle.fill"
     /// arrow.uturn.down.square
-    case arrowUturnDownSquare
+    case arrowUturnDownSquare = "arrow.uturn.down.square"
     /// arrow.uturn.down.square.fill
-    case arrowUturnDownSquareFill
+    case arrowUturnDownSquareFill = "arrow.uturn.down.square.fill"
     /// arrow.left.and.right
-    case arrowLeftAndRight
+    case arrowLeftAndRight = "arrow.left.and.right"
     /// arrow.left.and.right.circle
-    case arrowLeftAndRightCircle
+    case arrowLeftAndRightCircle = "arrow.left.and.right.circle"
     /// arrow.left.and.right.circle.fill
-    case arrowLeftAndRightCircleFill
+    case arrowLeftAndRightCircleFill = "arrow.left.and.right.circle.fill"
     /// arrow.left.and.right.square
-    case arrowLeftAndRightSquare
+    case arrowLeftAndRightSquare = "arrow.left.and.right.square"
     /// arrow.left.and.right.square.fill
-    case arrowLeftAndRightSquareFill
+    case arrowLeftAndRightSquareFill = "arrow.left.and.right.square.fill"
     /// arrow.up.and.down
-    case arrowUpAndDown
+    case arrowUpAndDown = "arrow.up.and.down"
     /// arrow.up.and.down.circle
-    case arrowUpAndDownCircle
+    case arrowUpAndDownCircle = "arrow.up.and.down.circle"
     /// arrow.up.and.down.circle.fill
-    case arrowUpAndDownCircleFill
+    case arrowUpAndDownCircleFill = "arrow.up.and.down.circle.fill"
     /// arrow.up.and.down.square
-    case arrowUpAndDownSquare
+    case arrowUpAndDownSquare = "arrow.up.and.down.square"
     /// arrow.up.and.down.square.fill
-    case arrowUpAndDownSquareFill
+    case arrowUpAndDownSquareFill = "arrow.up.and.down.square.fill"
     /// arrow.up.to.line
-    case arrowUpToLine
+    case arrowUpToLine = "arrow.up.to.line"
     /// arrow.down.to.line
-    case arrowDownToLine
+    case arrowDownToLine = "arrow.down.to.line"
     /// arrow.left.to.line
-    case arrowLeftToLine
+    case arrowLeftToLine = "arrow.left.to.line"
     /// arrow.right.to.line
-    case arrowRightToLine
+    case arrowRightToLine = "arrow.right.to.line"
     /// arrow.clockwise
-    case arrowClockwise
+    case arrowClockwise = "arrow.clockwise"
     /// arrow.clockwise.circle
-    case arrowClockwiseCircle
+    case arrowClockwiseCircle = "arrow.clockwise.circle"
     /// arrow.clockwise.circle.fill
-    case arrowClockwiseCircleFill
+    case arrowClockwiseCircleFill = "arrow.clockwise.circle.fill"
     /// arrow.counterclockwise
-    case arrowCounterclockwise
+    case arrowCounterclockwise = "arrow.counterclockwise"
     /// arrow.counterclockwise.circle
-    case arrowCounterclockwiseCircle
+    case arrowCounterclockwiseCircle = "arrow.counterclockwise.circle"
     /// arrow.counterclockwise.circle.fill
-    case arrowCounterclockwiseCircleFill
+    case arrowCounterclockwiseCircleFill = "arrow.counterclockwise.circle.fill"
     /// arrow.up.left.and.arrow.down.right
-    case arrowUpLeftAndArrowDownRight
+    case arrowUpLeftAndArrowDownRight = "arrow.up.left.and.arrow.down.right"
     /// arrow.down.right.and.arrow.up.left
-    case arrowDownRightAndArrowUpLeft
+    case arrowDownRightAndArrowUpLeft = "arrow.down.right.and.arrow.up.left"
     /// return
-    case `return`
+    case `return` = "return"
     /// arrow.2.squarepath
-    case arrow2Squarepath
+    case arrow2Squarepath = "arrow.2.squarepath"
     /// arrow.3.trianglepath
-    case arrow3Trianglepath
+    case arrow3Trianglepath = "arrow.3.trianglepath"
     /// arrowtriangle.left
-    case arrowtriangleLeft
+    case arrowtriangleLeft = "arrowtriangle.left"
     /// arrowtriangle.left.fill
-    case arrowtriangleLeftFill
+    case arrowtriangleLeftFill = "arrowtriangle.left.fill"
     /// arrowtriangle.left.circle
-    case arrowtriangleLeftCircle
+    case arrowtriangleLeftCircle = "arrowtriangle.left.circle"
     /// arrowtriangle.left.circle.fill
-    case arrowtriangleLeftCircleFill
+    case arrowtriangleLeftCircleFill = "arrowtriangle.left.circle.fill"
     /// arrowtriangle.left.square
-    case arrowtriangleLeftSquare
+    case arrowtriangleLeftSquare = "arrowtriangle.left.square"
     /// arrowtriangle.left.square.fill
-    case arrowtriangleLeftSquareFill
+    case arrowtriangleLeftSquareFill = "arrowtriangle.left.square.fill"
     /// arrowtriangle.right
-    case arrowtriangleRight
+    case arrowtriangleRight = "arrowtriangle.right"
     /// arrowtriangle.right.fill
-    case arrowtriangleRightFill
+    case arrowtriangleRightFill = "arrowtriangle.right.fill"
     /// arrowtriangle.right.circle
-    case arrowtriangleRightCircle
+    case arrowtriangleRightCircle = "arrowtriangle.right.circle"
     /// arrowtriangle.right.circle.fill
-    case arrowtriangleRightCircleFill
+    case arrowtriangleRightCircleFill = "arrowtriangle.right.circle.fill"
     /// arrowtriangle.right.square
-    case arrowtriangleRightSquare
+    case arrowtriangleRightSquare = "arrowtriangle.right.square"
     /// arrowtriangle.right.square.fill
-    case arrowtriangleRightSquareFill
+    case arrowtriangleRightSquareFill = "arrowtriangle.right.square.fill"
     /// arrowtriangle.up
-    case arrowtriangleUp
+    case arrowtriangleUp = "arrowtriangle.up"
     /// arrowtriangle.up.fill
-    case arrowtriangleUpFill
+    case arrowtriangleUpFill = "arrowtriangle.up.fill"
     /// arrowtriangle.up.circle
-    case arrowtriangleUpCircle
+    case arrowtriangleUpCircle = "arrowtriangle.up.circle"
     /// arrowtriangle.up.circle.fill
-    case arrowtriangleUpCircleFill
+    case arrowtriangleUpCircleFill = "arrowtriangle.up.circle.fill"
     /// arrowtriangle.up.square
-    case arrowtriangleUpSquare
+    case arrowtriangleUpSquare = "arrowtriangle.up.square"
     /// arrowtriangle.up.square.fill
-    case arrowtriangleUpSquareFill
+    case arrowtriangleUpSquareFill = "arrowtriangle.up.square.fill"
     /// arrowtriangle.down
-    case arrowtriangleDown
+    case arrowtriangleDown = "arrowtriangle.down"
     /// arrowtriangle.down.fill
-    case arrowtriangleDownFill
+    case arrowtriangleDownFill = "arrowtriangle.down.fill"
     /// arrowtriangle.down.circle
-    case arrowtriangleDownCircle
+    case arrowtriangleDownCircle = "arrowtriangle.down.circle"
     /// arrowtriangle.down.circle.fill
-    case arrowtriangleDownCircleFill
+    case arrowtriangleDownCircleFill = "arrowtriangle.down.circle.fill"
     /// arrowtriangle.down.square
-    case arrowtriangleDownSquare
+    case arrowtriangleDownSquare = "arrowtriangle.down.square"
     /// arrowtriangle.down.square.fill
-    case arrowtriangleDownSquareFill
+    case arrowtriangleDownSquareFill = "arrowtriangle.down.square.fill"
     /// slash.circle
-    case slashCircle
+    case slashCircle = "slash.circle"
     /// slash.circle.fill
-    case slashCircleFill
+    case slashCircleFill = "slash.circle.fill"
     /// asterisk.circle
-    case asteriskCircle
+    case asteriskCircle = "asterisk.circle"
     /// asterisk.circle.fill
-    case asteriskCircleFill
+    case asteriskCircleFill = "asterisk.circle.fill"
     /// a.circle
-    case aCircle
+    case aCircle = "a.circle"
     /// a.circle.fill
-    case aCircleFill
+    case aCircleFill = "a.circle.fill"
     /// a.square
-    case aSquare
+    case aSquare = "a.square"
     /// a.square.fill
-    case aSquareFill
+    case aSquareFill = "a.square.fill"
     /// b.circle
-    case bCircle
+    case bCircle = "b.circle"
     /// b.circle.fill
-    case bCircleFill
+    case bCircleFill = "b.circle.fill"
     /// b.square
-    case bSquare
+    case bSquare = "b.square"
     /// b.square.fill
-    case bSquareFill
+    case bSquareFill = "b.square.fill"
     /// c.circle
-    case cCircle
+    case cCircle = "c.circle"
     /// c.circle.fill
-    case cCircleFill
+    case cCircleFill = "c.circle.fill"
     /// c.square
-    case cSquare
+    case cSquare = "c.square"
     /// c.square.fill
-    case cSquareFill
+    case cSquareFill = "c.square.fill"
     /// d.circle
-    case dCircle
+    case dCircle = "d.circle"
     /// d.circle.fill
-    case dCircleFill
+    case dCircleFill = "d.circle.fill"
     /// d.square
-    case dSquare
+    case dSquare = "d.square"
     /// d.square.fill
-    case dSquareFill
+    case dSquareFill = "d.square.fill"
     /// e.circle
-    case eCircle
+    case eCircle = "e.circle"
     /// e.circle.fill
-    case eCircleFill
+    case eCircleFill = "e.circle.fill"
     /// e.square
-    case eSquare
+    case eSquare = "e.square"
     /// e.square.fill
-    case eSquareFill
+    case eSquareFill = "e.square.fill"
     /// f.circle
-    case fCircle
+    case fCircle = "f.circle"
     /// f.circle.fill
-    case fCircleFill
+    case fCircleFill = "f.circle.fill"
     /// f.square
-    case fSquare
+    case fSquare = "f.square"
     /// f.square.fill
-    case fSquareFill
+    case fSquareFill = "f.square.fill"
     /// g.circle
-    case gCircle
+    case gCircle = "g.circle"
     /// g.circle.fill
-    case gCircleFill
+    case gCircleFill = "g.circle.fill"
     /// g.square
-    case gSquare
+    case gSquare = "g.square"
     /// g.square.fill
-    case gSquareFill
+    case gSquareFill = "g.square.fill"
     /// h.circle
-    case hCircle
+    case hCircle = "h.circle"
     /// h.circle.fill
-    case hCircleFill
+    case hCircleFill = "h.circle.fill"
     /// h.square
-    case hSquare
+    case hSquare = "h.square"
     /// h.square.fill
-    case hSquareFill
+    case hSquareFill = "h.square.fill"
     /// i.circle
-    case iCircle
+    case iCircle = "i.circle"
     /// i.circle.fill
-    case iCircleFill
+    case iCircleFill = "i.circle.fill"
     /// i.square
-    case iSquare
+    case iSquare = "i.square"
     /// i.square.fill
-    case iSquareFill
+    case iSquareFill = "i.square.fill"
     /// j.circle
-    case jCircle
+    case jCircle = "j.circle"
     /// j.circle.fill
-    case jCircleFill
+    case jCircleFill = "j.circle.fill"
     /// j.square
-    case jSquare
+    case jSquare = "j.square"
     /// j.square.fill
-    case jSquareFill
+    case jSquareFill = "j.square.fill"
     /// k.circle
-    case kCircle
+    case kCircle = "k.circle"
     /// k.circle.fill
-    case kCircleFill
+    case kCircleFill = "k.circle.fill"
     /// k.square
-    case kSquare
+    case kSquare = "k.square"
     /// k.square.fill
-    case kSquareFill
+    case kSquareFill = "k.square.fill"
     /// l.circle
-    case lCircle
+    case lCircle = "l.circle"
     /// l.circle.fill
-    case lCircleFill
+    case lCircleFill = "l.circle.fill"
     /// l.square
-    case lSquare
+    case lSquare = "l.square"
     /// l.square.fill
-    case lSquareFill
+    case lSquareFill = "l.square.fill"
     /// m.circle
-    case mCircle
+    case mCircle = "m.circle"
     /// m.circle.fill
-    case mCircleFill
+    case mCircleFill = "m.circle.fill"
     /// m.square
-    case mSquare
+    case mSquare = "m.square"
     /// m.square.fill
-    case mSquareFill
+    case mSquareFill = "m.square.fill"
     /// n.circle
-    case nCircle
+    case nCircle = "n.circle"
     /// n.circle.fill
-    case nCircleFill
+    case nCircleFill = "n.circle.fill"
     /// n.square
-    case nSquare
+    case nSquare = "n.square"
     /// n.square.fill
-    case nSquareFill
+    case nSquareFill = "n.square.fill"
     /// o.circle
-    case oCircle
+    case oCircle = "o.circle"
     /// o.circle.fill
-    case oCircleFill
+    case oCircleFill = "o.circle.fill"
     /// o.square
-    case oSquare
+    case oSquare = "o.square"
     /// o.square.fill
-    case oSquareFill
+    case oSquareFill = "o.square.fill"
     /// p.circle
-    case pCircle
+    case pCircle = "p.circle"
     /// p.circle.fill
-    case pCircleFill
+    case pCircleFill = "p.circle.fill"
     /// p.square
-    case pSquare
+    case pSquare = "p.square"
     /// p.square.fill
-    case pSquareFill
+    case pSquareFill = "p.square.fill"
     /// q.circle
-    case qCircle
+    case qCircle = "q.circle"
     /// q.circle.fill
-    case qCircleFill
+    case qCircleFill = "q.circle.fill"
     /// q.square
-    case qSquare
+    case qSquare = "q.square"
     /// q.square.fill
-    case qSquareFill
+    case qSquareFill = "q.square.fill"
     /// r.circle
-    case rCircle
+    case rCircle = "r.circle"
     /// r.circle.fill
-    case rCircleFill
+    case rCircleFill = "r.circle.fill"
     /// r.square
-    case rSquare
+    case rSquare = "r.square"
     /// r.square.fill
-    case rSquareFill
+    case rSquareFill = "r.square.fill"
     /// s.circle
-    case sCircle
+    case sCircle = "s.circle"
     /// s.circle.fill
-    case sCircleFill
+    case sCircleFill = "s.circle.fill"
     /// s.square
-    case sSquare
+    case sSquare = "s.square"
     /// s.square.fill
-    case sSquareFill
+    case sSquareFill = "s.square.fill"
     /// t.circle
-    case tCircle
+    case tCircle = "t.circle"
     /// t.circle.fill
-    case tCircleFill
+    case tCircleFill = "t.circle.fill"
     /// t.square
-    case tSquare
+    case tSquare = "t.square"
     /// t.square.fill
-    case tSquareFill
+    case tSquareFill = "t.square.fill"
     /// u.circle
-    case uCircle
+    case uCircle = "u.circle"
     /// u.circle.fill
-    case uCircleFill
+    case uCircleFill = "u.circle.fill"
     /// u.square
-    case uSquare
+    case uSquare = "u.square"
     /// u.square.fill
-    case uSquareFill
+    case uSquareFill = "u.square.fill"
     /// v.circle
-    case vCircle
+    case vCircle = "v.circle"
     /// v.circle.fill
-    case vCircleFill
+    case vCircleFill = "v.circle.fill"
     /// v.square
-    case vSquare
+    case vSquare = "v.square"
     /// v.square.fill
-    case vSquareFill
+    case vSquareFill = "v.square.fill"
     /// w.circle
-    case wCircle
+    case wCircle = "w.circle"
     /// w.circle.fill
-    case wCircleFill
+    case wCircleFill = "w.circle.fill"
     /// w.square
-    case wSquare
+    case wSquare = "w.square"
     /// w.square.fill
-    case wSquareFill
+    case wSquareFill = "w.square.fill"
     /// x.circle
-    case xCircle
+    case xCircle = "x.circle"
     /// x.circle.fill
-    case xCircleFill
+    case xCircleFill = "x.circle.fill"
     /// x.square
-    case xSquare
+    case xSquare = "x.square"
     /// x.square.fill
-    case xSquareFill
+    case xSquareFill = "x.square.fill"
     /// y.circle
-    case yCircle
+    case yCircle = "y.circle"
     /// y.circle.fill
-    case yCircleFill
+    case yCircleFill = "y.circle.fill"
     /// y.square
-    case ySquare
+    case ySquare = "y.square"
     /// y.square.fill
-    case ySquareFill
+    case ySquareFill = "y.square.fill"
     /// z.circle
-    case zCircle
+    case zCircle = "z.circle"
     /// z.circle.fill
-    case zCircleFill
+    case zCircleFill = "z.circle.fill"
     /// z.square
-    case zSquare
+    case zSquare = "z.square"
     /// z.square.fill
-    case zSquareFill
+    case zSquareFill = "z.square.fill"
     /// australsign.circle
-    case australsignCircle
+    case australsignCircle = "australsign.circle"
     /// australsign.circle.fill
-    case australsignCircleFill
+    case australsignCircleFill = "australsign.circle.fill"
     /// australsign.square
-    case australsignSquare
+    case australsignSquare = "australsign.square"
     /// australsign.square.fill
-    case australsignSquareFill
+    case australsignSquareFill = "australsign.square.fill"
     /// bahtsign.circle
-    case bahtsignCircle
+    case bahtsignCircle = "bahtsign.circle"
     /// bahtsign.circle.fill
-    case bahtsignCircleFill
+    case bahtsignCircleFill = "bahtsign.circle.fill"
     /// bahtsign.square
-    case bahtsignSquare
+    case bahtsignSquare = "bahtsign.square"
     /// bahtsign.square.fill
-    case bahtsignSquareFill
+    case bahtsignSquareFill = "bahtsign.square.fill"
     /// bitcoinsign.circle
-    case bitcoinsignCircle
+    case bitcoinsignCircle = "bitcoinsign.circle"
     /// bitcoinsign.circle.fill
-    case bitcoinsignCircleFill
+    case bitcoinsignCircleFill = "bitcoinsign.circle.fill"
     /// bitcoinsign.square
-    case bitcoinsignSquare
+    case bitcoinsignSquare = "bitcoinsign.square"
     /// bitcoinsign.square.fill
-    case bitcoinsignSquareFill
+    case bitcoinsignSquareFill = "bitcoinsign.square.fill"
     /// cedisign.circle
-    case cedisignCircle
+    case cedisignCircle = "cedisign.circle"
     /// cedisign.circle.fill
-    case cedisignCircleFill
+    case cedisignCircleFill = "cedisign.circle.fill"
     /// cedisign.square
-    case cedisignSquare
+    case cedisignSquare = "cedisign.square"
     /// cedisign.square.fill
-    case cedisignSquareFill
+    case cedisignSquareFill = "cedisign.square.fill"
     /// centsign.circle
-    case centsignCircle
+    case centsignCircle = "centsign.circle"
     /// centsign.circle.fill
-    case centsignCircleFill
+    case centsignCircleFill = "centsign.circle.fill"
     /// centsign.square
-    case centsignSquare
+    case centsignSquare = "centsign.square"
     /// centsign.square.fill
-    case centsignSquareFill
+    case centsignSquareFill = "centsign.square.fill"
     /// coloncurrencysign.circle
-    case coloncurrencysignCircle
+    case coloncurrencysignCircle = "coloncurrencysign.circle"
     /// coloncurrencysign.circle.fill
-    case coloncurrencysignCircleFill
+    case coloncurrencysignCircleFill = "coloncurrencysign.circle.fill"
     /// coloncurrencysign.square
-    case coloncurrencysignSquare
+    case coloncurrencysignSquare = "coloncurrencysign.square"
     /// coloncurrencysign.square.fill
-    case coloncurrencysignSquareFill
+    case coloncurrencysignSquareFill = "coloncurrencysign.square.fill"
     /// cruzeirosign.circle
-    case cruzeirosignCircle
+    case cruzeirosignCircle = "cruzeirosign.circle"
     /// cruzeirosign.circle.fill
-    case cruzeirosignCircleFill
+    case cruzeirosignCircleFill = "cruzeirosign.circle.fill"
     /// cruzeirosign.square
-    case cruzeirosignSquare
+    case cruzeirosignSquare = "cruzeirosign.square"
     /// cruzeirosign.square.fill
-    case cruzeirosignSquareFill
+    case cruzeirosignSquareFill = "cruzeirosign.square.fill"
     /// dongsign.circle
-    case dongsignCircle
+    case dongsignCircle = "dongsign.circle"
     /// dongsign.circle.fill
-    case dongsignCircleFill
+    case dongsignCircleFill = "dongsign.circle.fill"
     /// dongsign.square
-    case dongsignSquare
+    case dongsignSquare = "dongsign.square"
     /// dongsign.square.fill
-    case dongsignSquareFill
+    case dongsignSquareFill = "dongsign.square.fill"
     /// dollarsign.circle
-    case dollarsignCircle
+    case dollarsignCircle = "dollarsign.circle"
     /// dollarsign.circle.fill
-    case dollarsignCircleFill
+    case dollarsignCircleFill = "dollarsign.circle.fill"
     /// dollarsign.square
-    case dollarsignSquare
+    case dollarsignSquare = "dollarsign.square"
     /// dollarsign.square.fill
-    case dollarsignSquareFill
+    case dollarsignSquareFill = "dollarsign.square.fill"
     /// eurosign.circle
-    case eurosignCircle
+    case eurosignCircle = "eurosign.circle"
     /// eurosign.circle.fill
-    case eurosignCircleFill
+    case eurosignCircleFill = "eurosign.circle.fill"
     /// eurosign.square
-    case eurosignSquare
+    case eurosignSquare = "eurosign.square"
     /// eurosign.square.fill
-    case eurosignSquareFill
+    case eurosignSquareFill = "eurosign.square.fill"
     /// florinsign.circle
-    case florinsignCircle
+    case florinsignCircle = "florinsign.circle"
     /// florinsign.circle.fill
-    case florinsignCircleFill
+    case florinsignCircleFill = "florinsign.circle.fill"
     /// florinsign.square
-    case florinsignSquare
+    case florinsignSquare = "florinsign.square"
     /// florinsign.square.fill
-    case florinsignSquareFill
+    case florinsignSquareFill = "florinsign.square.fill"
     /// francsign.circle
-    case francsignCircle
+    case francsignCircle = "francsign.circle"
     /// francsign.circle.fill
-    case francsignCircleFill
+    case francsignCircleFill = "francsign.circle.fill"
     /// francsign.square
-    case francsignSquare
+    case francsignSquare = "francsign.square"
     /// francsign.square.fill
-    case francsignSquareFill
+    case francsignSquareFill = "francsign.square.fill"
     /// guaranisign.circle
-    case guaranisignCircle
+    case guaranisignCircle = "guaranisign.circle"
     /// guaranisign.circle.fill
-    case guaranisignCircleFill
+    case guaranisignCircleFill = "guaranisign.circle.fill"
     /// guaranisign.square
-    case guaranisignSquare
+    case guaranisignSquare = "guaranisign.square"
     /// guaranisign.square.fill
-    case guaranisignSquareFill
+    case guaranisignSquareFill = "guaranisign.square.fill"
     /// hryvniasign.circle
-    case hryvniasignCircle
+    case hryvniasignCircle = "hryvniasign.circle"
     /// hryvniasign.circle.fill
-    case hryvniasignCircleFill
+    case hryvniasignCircleFill = "hryvniasign.circle.fill"
     /// hryvniasign.square
-    case hryvniasignSquare
+    case hryvniasignSquare = "hryvniasign.square"
     /// hryvniasign.square.fill
-    case hryvniasignSquareFill
+    case hryvniasignSquareFill = "hryvniasign.square.fill"
     /// indianrupeesign.circle
-    case indianrupeesignCircle
+    case indianrupeesignCircle = "indianrupeesign.circle"
     /// indianrupeesign.circle.fill
-    case indianrupeesignCircleFill
+    case indianrupeesignCircleFill = "indianrupeesign.circle.fill"
     /// indianrupeesign.square
-    case indianrupeesignSquare
+    case indianrupeesignSquare = "indianrupeesign.square"
     /// indianrupeesign.square.fill
-    case indianrupeesignSquareFill
+    case indianrupeesignSquareFill = "indianrupeesign.square.fill"
     /// kipsign.circle
-    case kipsignCircle
+    case kipsignCircle = "kipsign.circle"
     /// kipsign.circle.fill
-    case kipsignCircleFill
+    case kipsignCircleFill = "kipsign.circle.fill"
     /// kipsign.square
-    case kipsignSquare
+    case kipsignSquare = "kipsign.square"
     /// kipsign.square.fill
-    case kipsignSquareFill
+    case kipsignSquareFill = "kipsign.square.fill"
     /// larisign.circle
-    case larisignCircle
+    case larisignCircle = "larisign.circle"
     /// larisign.circle.fill
-    case larisignCircleFill
+    case larisignCircleFill = "larisign.circle.fill"
     /// larisign.square
-    case larisignSquare
+    case larisignSquare = "larisign.square"
     /// larisign.square.fill
-    case larisignSquareFill
+    case larisignSquareFill = "larisign.square.fill"
     /// lirasign.circle
-    case lirasignCircle
+    case lirasignCircle = "lirasign.circle"
     /// lirasign.circle.fill
-    case lirasignCircleFill
+    case lirasignCircleFill = "lirasign.circle.fill"
     /// lirasign.square
-    case lirasignSquare
+    case lirasignSquare = "lirasign.square"
     /// lirasign.square.fill
-    case lirasignSquareFill
+    case lirasignSquareFill = "lirasign.square.fill"
     /// manatsign.circle
-    case manatsignCircle
+    case manatsignCircle = "manatsign.circle"
     /// manatsign.circle.fill
-    case manatsignCircleFill
+    case manatsignCircleFill = "manatsign.circle.fill"
     /// manatsign.square
-    case manatsignSquare
+    case manatsignSquare = "manatsign.square"
     /// manatsign.square.fill
-    case manatsignSquareFill
+    case manatsignSquareFill = "manatsign.square.fill"
     /// millsign.circle
-    case millsignCircle
+    case millsignCircle = "millsign.circle"
     /// millsign.circle.fill
-    case millsignCircleFill
+    case millsignCircleFill = "millsign.circle.fill"
     /// millsign.square
-    case millsignSquare
+    case millsignSquare = "millsign.square"
     /// millsign.square.fill
-    case millsignSquareFill
+    case millsignSquareFill = "millsign.square.fill"
     /// nairasign.circle
-    case nairasignCircle
+    case nairasignCircle = "nairasign.circle"
     /// nairasign.circle.fill
-    case nairasignCircleFill
+    case nairasignCircleFill = "nairasign.circle.fill"
     /// nairasign.square
-    case nairasignSquare
+    case nairasignSquare = "nairasign.square"
     /// nairasign.square.fill
-    case nairasignSquareFill
+    case nairasignSquareFill = "nairasign.square.fill"
     /// pesetasign.circle
-    case pesetasignCircle
+    case pesetasignCircle = "pesetasign.circle"
     /// pesetasign.circle.fill
-    case pesetasignCircleFill
+    case pesetasignCircleFill = "pesetasign.circle.fill"
     /// pesetasign.square
-    case pesetasignSquare
+    case pesetasignSquare = "pesetasign.square"
     /// pesetasign.square.fill
-    case pesetasignSquareFill
+    case pesetasignSquareFill = "pesetasign.square.fill"
     /// pesosign.circle
-    case pesosignCircle
+    case pesosignCircle = "pesosign.circle"
     /// pesosign.circle.fill
-    case pesosignCircleFill
+    case pesosignCircleFill = "pesosign.circle.fill"
     /// pesosign.square
-    case pesosignSquare
+    case pesosignSquare = "pesosign.square"
     /// pesosign.square.fill
-    case pesosignSquareFill
+    case pesosignSquareFill = "pesosign.square.fill"
     /// rublesign.circle
-    case rublesignCircle
+    case rublesignCircle = "rublesign.circle"
     /// rublesign.circle.fill
-    case rublesignCircleFill
+    case rublesignCircleFill = "rublesign.circle.fill"
     /// rublesign.square
-    case rublesignSquare
+    case rublesignSquare = "rublesign.square"
     /// rublesign.square.fill
-    case rublesignSquareFill
+    case rublesignSquareFill = "rublesign.square.fill"
     /// rupeesign.circle
-    case rupeesignCircle
+    case rupeesignCircle = "rupeesign.circle"
     /// rupeesign.circle.fill
-    case rupeesignCircleFill
+    case rupeesignCircleFill = "rupeesign.circle.fill"
     /// rupeesign.square
-    case rupeesignSquare
+    case rupeesignSquare = "rupeesign.square"
     /// rupeesign.square.fill
-    case rupeesignSquareFill
+    case rupeesignSquareFill = "rupeesign.square.fill"
     /// sterlingsign.circle
-    case sterlingsignCircle
+    case sterlingsignCircle = "sterlingsign.circle"
     /// sterlingsign.circle.fill
-    case sterlingsignCircleFill
+    case sterlingsignCircleFill = "sterlingsign.circle.fill"
     /// sterlingsign.square
-    case sterlingsignSquare
+    case sterlingsignSquare = "sterlingsign.square"
     /// sterlingsign.square.fill
-    case sterlingsignSquareFill
+    case sterlingsignSquareFill = "sterlingsign.square.fill"
     /// tengesign.circle
-    case tengesignCircle
+    case tengesignCircle = "tengesign.circle"
     /// tengesign.circle.fill
-    case tengesignCircleFill
+    case tengesignCircleFill = "tengesign.circle.fill"
     /// tengesign.square
-    case tengesignSquare
+    case tengesignSquare = "tengesign.square"
     /// tengesign.square.fill
-    case tengesignSquareFill
+    case tengesignSquareFill = "tengesign.square.fill"
     /// tugriksign.circle
-    case tugriksignCircle
+    case tugriksignCircle = "tugriksign.circle"
     /// tugriksign.circle.fill
-    case tugriksignCircleFill
+    case tugriksignCircleFill = "tugriksign.circle.fill"
     /// tugriksign.square
-    case tugriksignSquare
+    case tugriksignSquare = "tugriksign.square"
     /// tugriksign.square.fill
-    case tugriksignSquareFill
+    case tugriksignSquareFill = "tugriksign.square.fill"
     /// turkishlirasign.circle
-    case turkishlirasignCircle
+    case turkishlirasignCircle = "turkishlirasign.circle"
     /// turkishlirasign.circle.fill
-    case turkishlirasignCircleFill
+    case turkishlirasignCircleFill = "turkishlirasign.circle.fill"
     /// turkishlirasign.square
-    case turkishlirasignSquare
+    case turkishlirasignSquare = "turkishlirasign.square"
     /// turkishlirasign.square.fill
-    case turkishlirasignSquareFill
+    case turkishlirasignSquareFill = "turkishlirasign.square.fill"
     /// wonsign.circle
-    case wonsignCircle
+    case wonsignCircle = "wonsign.circle"
     /// wonsign.circle.fill
-    case wonsignCircleFill
+    case wonsignCircleFill = "wonsign.circle.fill"
     /// wonsign.square
-    case wonsignSquare
+    case wonsignSquare = "wonsign.square"
     /// wonsign.square.fill
-    case wonsignSquareFill
+    case wonsignSquareFill = "wonsign.square.fill"
     /// yensign.circle
-    case yensignCircle
+    case yensignCircle = "yensign.circle"
     /// yensign.circle.fill
-    case yensignCircleFill
+    case yensignCircleFill = "yensign.circle.fill"
     /// yensign.square
-    case yensignSquare
+    case yensignSquare = "yensign.square"
     /// yensign.square.fill
-    case yensignSquareFill
+    case yensignSquareFill = "yensign.square.fill"
     /// 0.circle
-    case circle0
+    case circle0 = "0.circle"
     /// 0.circle.fill
-    case circleFill0
+    case circleFill0 = "0.circle.fill"
     /// 0.square
-    case square0
+    case square0 = "0.square"
     /// 0.square.fill
-    case squareFill0
+    case squareFill0 = "0.square.fill"
     /// 1.circle
-    case circle1
+    case circle1 = "1.circle"
     /// 1.circle.fill
-    case circleFill1
+    case circleFill1 = "1.circle.fill"
     /// 1.square
-    case square1
+    case square1 = "1.square"
     /// 1.square.fill
-    case squareFill1
+    case squareFill1 = "1.square.fill"
     /// 2.circle
-    case circle2
+    case circle2 = "2.circle"
     /// 2.circle.fill
-    case circleFill2
+    case circleFill2 = "2.circle.fill"
     /// 2.square
-    case square2
+    case square2 = "2.square"
     /// 2.square.fill
-    case squareFill2
+    case squareFill2 = "2.square.fill"
     /// 3.circle
-    case circle3
+    case circle3 = "3.circle"
     /// 3.circle.fill
-    case circleFill3
+    case circleFill3 = "3.circle.fill"
     /// 3.square
-    case square3
+    case square3 = "3.square"
     /// 3.square.fill
-    case squareFill3
+    case squareFill3 = "3.square.fill"
     /// 4.circle
-    case circle4
+    case circle4 = "4.circle"
     /// 4.circle.fill
-    case circleFill4
+    case circleFill4 = "4.circle.fill"
     /// 4.square
-    case square4
+    case square4 = "4.square"
     /// 4.square.fill
-    case squareFill4
+    case squareFill4 = "4.square.fill"
     /// 4.alt.circle
-    case altCircle4
+    case altCircle4 = "4.alt.circle"
     /// 4.alt.circle.fill
-    case altCircleFill4
+    case altCircleFill4 = "4.alt.circle.fill"
     /// 4.alt.square
-    case altSquare4
+    case altSquare4 = "4.alt.square"
     /// 4.alt.square.fill
-    case altSquareFill4
+    case altSquareFill4 = "4.alt.square.fill"
     /// 5.circle
-    case circle5
+    case circle5 = "5.circle"
     /// 5.circle.fill
-    case circleFill5
+    case circleFill5 = "5.circle.fill"
     /// 5.square
-    case square5
+    case square5 = "5.square"
     /// 5.square.fill
-    case squareFill5
+    case squareFill5 = "5.square.fill"
     /// 6.circle
-    case circle6
+    case circle6 = "6.circle"
     /// 6.circle.fill
-    case circleFill6
+    case circleFill6 = "6.circle.fill"
     /// 6.square
-    case square6
+    case square6 = "6.square"
     /// 6.square.fill
-    case squareFill6
+    case squareFill6 = "6.square.fill"
     /// 6.alt.circle
-    case altCircle6
+    case altCircle6 = "6.alt.circle"
     /// 6.alt.circle.fill
-    case altCircleFill6
+    case altCircleFill6 = "6.alt.circle.fill"
     /// 6.alt.square
-    case altSquare6
+    case altSquare6 = "6.alt.square"
     /// 6.alt.square.fill
-    case altSquareFill6
+    case altSquareFill6 = "6.alt.square.fill"
     /// 7.circle
-    case circle7
+    case circle7 = "7.circle"
     /// 7.circle.fill
-    case circleFill7
+    case circleFill7 = "7.circle.fill"
     /// 7.square
-    case square7
+    case square7 = "7.square"
     /// 7.square.fill
-    case squareFill7
+    case squareFill7 = "7.square.fill"
     /// 8.circle
-    case circle8
+    case circle8 = "8.circle"
     /// 8.circle.fill
-    case circleFill8
+    case circleFill8 = "8.circle.fill"
     /// 8.square
-    case square8
+    case square8 = "8.square"
     /// 8.square.fill
-    case squareFill8
+    case squareFill8 = "8.square.fill"
     /// 9.circle
-    case circle9
+    case circle9 = "9.circle"
     /// 9.circle.fill
-    case circleFill9
+    case circleFill9 = "9.circle.fill"
     /// 9.square
-    case square9
+    case square9 = "9.square"
     /// 9.square.fill
-    case squareFill9
+    case squareFill9 = "9.square.fill"
     /// 9.alt.circle
-    case altCircle9
+    case altCircle9 = "9.alt.circle"
     /// 9.alt.circle.fill
-    case altCircleFill9
+    case altCircleFill9 = "9.alt.circle.fill"
     /// 9.alt.square
-    case altSquare9
+    case altSquare9 = "9.alt.square"
     /// 9.alt.square.fill
-    case altSquareFill9
+    case altSquareFill9 = "9.alt.square.fill"
     /// 00.circle
-    case circle00
+    case circle00 = "00.circle"
     /// 00.circle.fill
-    case circleFill00
+    case circleFill00 = "00.circle.fill"
     /// 00.square
-    case square00
+    case square00 = "00.square"
     /// 00.square.fill
-    case squareFill00
+    case squareFill00 = "00.square.fill"
     /// 01.circle
-    case circle01
+    case circle01 = "01.circle"
     /// 01.circle.fill
-    case circleFill01
+    case circleFill01 = "01.circle.fill"
     /// 01.square
-    case square01
+    case square01 = "01.square"
     /// 01.square.fill
-    case squareFill01
+    case squareFill01 = "01.square.fill"
     /// 02.circle
-    case circle02
+    case circle02 = "02.circle"
     /// 02.circle.fill
-    case circleFill02
+    case circleFill02 = "02.circle.fill"
     /// 02.square
-    case square02
+    case square02 = "02.square"
     /// 02.square.fill
-    case squareFill02
+    case squareFill02 = "02.square.fill"
     /// 03.circle
-    case circle03
+    case circle03 = "03.circle"
     /// 03.circle.fill
-    case circleFill03
+    case circleFill03 = "03.circle.fill"
     /// 03.square
-    case square03
+    case square03 = "03.square"
     /// 03.square.fill
-    case squareFill03
+    case squareFill03 = "03.square.fill"
     /// 04.circle
-    case circle04
+    case circle04 = "04.circle"
     /// 04.circle.fill
-    case circleFill04
+    case circleFill04 = "04.circle.fill"
     /// 04.square
-    case square04
+    case square04 = "04.square"
     /// 04.square.fill
-    case squareFill04
+    case squareFill04 = "04.square.fill"
     /// 05.circle
-    case circle05
+    case circle05 = "05.circle"
     /// 05.circle.fill
-    case circleFill05
+    case circleFill05 = "05.circle.fill"
     /// 05.square
-    case square05
+    case square05 = "05.square"
     /// 05.square.fill
-    case squareFill05
+    case squareFill05 = "05.square.fill"
     /// 06.circle
-    case circle06
+    case circle06 = "06.circle"
     /// 06.circle.fill
-    case circleFill06
+    case circleFill06 = "06.circle.fill"
     /// 06.square
-    case square06
+    case square06 = "06.square"
     /// 06.square.fill
-    case squareFill06
+    case squareFill06 = "06.square.fill"
     /// 07.circle
-    case circle07
+    case circle07 = "07.circle"
     /// 07.circle.fill
-    case circleFill07
+    case circleFill07 = "07.circle.fill"
     /// 07.square
-    case square07
+    case square07 = "07.square"
     /// 07.square.fill
-    case squareFill07
+    case squareFill07 = "07.square.fill"
     /// 08.circle
-    case circle08
+    case circle08 = "08.circle"
     /// 08.circle.fill
-    case circleFill08
+    case circleFill08 = "08.circle.fill"
     /// 08.square
-    case square08
+    case square08 = "08.square"
     /// 08.square.fill
-    case squareFill08
+    case squareFill08 = "08.square.fill"
     /// 09.circle
-    case circle09
+    case circle09 = "09.circle"
     /// 09.circle.fill
-    case circleFill09
+    case circleFill09 = "09.circle.fill"
     /// 09.square
-    case square09
+    case square09 = "09.square"
     /// 09.square.fill
-    case squareFill09
+    case squareFill09 = "09.square.fill"
     /// 10.circle
-    case circle10
+    case circle10 = "10.circle"
     /// 10.circle.fill
-    case circleFill10
+    case circleFill10 = "10.circle.fill"
     /// 10.square
-    case square10
+    case square10 = "10.square"
     /// 10.square.fill
-    case squareFill10
+    case squareFill10 = "10.square.fill"
     /// 11.circle
-    case circle11
+    case circle11 = "11.circle"
     /// 11.circle.fill
-    case circleFill11
+    case circleFill11 = "11.circle.fill"
     /// 11.square
-    case square11
+    case square11 = "11.square"
     /// 11.square.fill
-    case squareFill11
+    case squareFill11 = "11.square.fill"
     /// 12.circle
-    case circle12
+    case circle12 = "12.circle"
     /// 12.circle.fill
-    case circleFill12
+    case circleFill12 = "12.circle.fill"
     /// 12.square
-    case square12
+    case square12 = "12.square"
     /// 12.square.fill
-    case squareFill12
+    case squareFill12 = "12.square.fill"
     /// 13.circle
-    case circle13
+    case circle13 = "13.circle"
     /// 13.circle.fill
-    case circleFill13
+    case circleFill13 = "13.circle.fill"
     /// 13.square
-    case square13
+    case square13 = "13.square"
     /// 13.square.fill
-    case squareFill13
+    case squareFill13 = "13.square.fill"
     /// 14.circle
-    case circle14
+    case circle14 = "14.circle"
     /// 14.circle.fill
-    case circleFill14
+    case circleFill14 = "14.circle.fill"
     /// 14.square
-    case square14
+    case square14 = "14.square"
     /// 14.square.fill
-    case squareFill14
+    case squareFill14 = "14.square.fill"
     /// 15.circle
-    case circle15
+    case circle15 = "15.circle"
     /// 15.circle.fill
-    case circleFill15
+    case circleFill15 = "15.circle.fill"
     /// 15.square
-    case square15
+    case square15 = "15.square"
     /// 15.square.fill
-    case squareFill15
+    case squareFill15 = "15.square.fill"
     /// 16.circle
-    case circle16
+    case circle16 = "16.circle"
     /// 16.circle.fill
-    case circleFill16
+    case circleFill16 = "16.circle.fill"
     /// 16.square
-    case square16
+    case square16 = "16.square"
     /// 16.square.fill
-    case squareFill16
+    case squareFill16 = "16.square.fill"
     /// 17.circle
-    case circle17
+    case circle17 = "17.circle"
     /// 17.circle.fill
-    case circleFill17
+    case circleFill17 = "17.circle.fill"
     /// 17.square
-    case square17
+    case square17 = "17.square"
     /// 17.square.fill
-    case squareFill17
+    case squareFill17 = "17.square.fill"
     /// 18.circle
-    case circle18
+    case circle18 = "18.circle"
     /// 18.circle.fill
-    case circleFill18
+    case circleFill18 = "18.circle.fill"
     /// 18.square
-    case square18
+    case square18 = "18.square"
     /// 18.square.fill
-    case squareFill18
+    case squareFill18 = "18.square.fill"
     /// 19.circle
-    case circle19
+    case circle19 = "19.circle"
     /// 19.circle.fill
-    case circleFill19
+    case circleFill19 = "19.circle.fill"
     /// 19.square
-    case square19
+    case square19 = "19.square"
     /// 19.square.fill
-    case squareFill19
+    case squareFill19 = "19.square.fill"
     /// 20.circle
-    case circle20
+    case circle20 = "20.circle"
     /// 20.circle.fill
-    case circleFill20
+    case circleFill20 = "20.circle.fill"
     /// 20.square
-    case square20
+    case square20 = "20.square"
     /// 20.square.fill
-    case squareFill20
+    case squareFill20 = "20.square.fill"
     /// 21.circle
-    case circle21
+    case circle21 = "21.circle"
     /// 21.circle.fill
-    case circleFill21
+    case circleFill21 = "21.circle.fill"
     /// 21.square
-    case square21
+    case square21 = "21.square"
     /// 21.square.fill
-    case squareFill21
+    case squareFill21 = "21.square.fill"
     /// 22.circle
-    case circle22
+    case circle22 = "22.circle"
     /// 22.circle.fill
-    case circleFill22
+    case circleFill22 = "22.circle.fill"
     /// 22.square
-    case square22
+    case square22 = "22.square"
     /// 22.square.fill
-    case squareFill22
+    case squareFill22 = "22.square.fill"
     /// 23.circle
-    case circle23
+    case circle23 = "23.circle"
     /// 23.circle.fill
-    case circleFill23
+    case circleFill23 = "23.circle.fill"
     /// 23.square
-    case square23
+    case square23 = "23.square"
     /// 23.square.fill
-    case squareFill23
+    case squareFill23 = "23.square.fill"
     /// 24.circle
-    case circle24
+    case circle24 = "24.circle"
     /// 24.circle.fill
-    case circleFill24
+    case circleFill24 = "24.circle.fill"
     /// 24.square
-    case square24
+    case square24 = "24.square"
     /// 24.square.fill
-    case squareFill24
+    case squareFill24 = "24.square.fill"
     /// 25.circle
-    case circle25
+    case circle25 = "25.circle"
     /// 25.circle.fill
-    case circleFill25
+    case circleFill25 = "25.circle.fill"
     /// 25.square
-    case square25
+    case square25 = "25.square"
     /// 25.square.fill
-    case squareFill25
+    case squareFill25 = "25.square.fill"
     /// 26.circle
-    case circle26
+    case circle26 = "26.circle"
     /// 26.circle.fill
-    case circleFill26
+    case circleFill26 = "26.circle.fill"
     /// 26.square
-    case square26
+    case square26 = "26.square"
     /// 26.square.fill
-    case squareFill26
+    case squareFill26 = "26.square.fill"
     /// 27.circle
-    case circle27
+    case circle27 = "27.circle"
     /// 27.circle.fill
-    case circleFill27
+    case circleFill27 = "27.circle.fill"
     /// 27.square
-    case square27
+    case square27 = "27.square"
     /// 27.square.fill
-    case squareFill27
+    case squareFill27 = "27.square.fill"
     /// 28.circle
-    case circle28
+    case circle28 = "28.circle"
     /// 28.circle.fill
-    case circleFill28
+    case circleFill28 = "28.circle.fill"
     /// 28.square
-    case square28
+    case square28 = "28.square"
     /// 28.square.fill
-    case squareFill28
+    case squareFill28 = "28.square.fill"
     /// 29.circle
-    case circle29
+    case circle29 = "29.circle"
     /// 29.circle.fill
-    case circleFill29
+    case circleFill29 = "29.circle.fill"
     /// 29.square
-    case square29
+    case square29 = "29.square"
     /// 29.square.fill
-    case squareFill29
+    case squareFill29 = "29.square.fill"
     /// 30.circle
-    case circle30
+    case circle30 = "30.circle"
     /// 30.circle.fill
-    case circleFill30
+    case circleFill30 = "30.circle.fill"
     /// 30.square
-    case square30
+    case square30 = "30.square"
     /// 30.square.fill
-    case squareFill30
+    case squareFill30 = "30.square.fill"
     /// 31.circle
-    case circle31
+    case circle31 = "31.circle"
     /// 31.circle.fill
-    case circleFill31
+    case circleFill31 = "31.circle.fill"
     /// 31.square
-    case square31
+    case square31 = "31.square"
     /// 31.square.fill
-    case squareFill31
+    case squareFill31 = "31.square.fill"
     /// 32.circle
-    case circle32
+    case circle32 = "32.circle"
     /// 32.circle.fill
-    case circleFill32
+    case circleFill32 = "32.circle.fill"
     /// 32.square
-    case square32
+    case square32 = "32.square"
     /// 32.square.fill
-    case squareFill32
+    case squareFill32 = "32.square.fill"
     /// 33.circle
-    case circle33
+    case circle33 = "33.circle"
     /// 33.circle.fill
-    case circleFill33
+    case circleFill33 = "33.circle.fill"
     /// 33.square
-    case square33
+    case square33 = "33.square"
     /// 33.square.fill
-    case squareFill33
+    case squareFill33 = "33.square.fill"
     /// 34.circle
-    case circle34
+    case circle34 = "34.circle"
     /// 34.circle.fill
-    case circleFill34
+    case circleFill34 = "34.circle.fill"
     /// 34.square
-    case square34
+    case square34 = "34.square"
     /// 34.square.fill
-    case squareFill34
+    case squareFill34 = "34.square.fill"
     /// 35.circle
-    case circle35
+    case circle35 = "35.circle"
     /// 35.circle.fill
-    case circleFill35
+    case circleFill35 = "35.circle.fill"
     /// 35.square
-    case square35
+    case square35 = "35.square"
     /// 35.square.fill
-    case squareFill35
+    case squareFill35 = "35.square.fill"
     /// 36.circle
-    case circle36
+    case circle36 = "36.circle"
     /// 36.circle.fill
-    case circleFill36
+    case circleFill36 = "36.circle.fill"
     /// 36.square
-    case square36
+    case square36 = "36.square"
     /// 36.square.fill
-    case squareFill36
+    case squareFill36 = "36.square.fill"
     /// 37.circle
-    case circle37
+    case circle37 = "37.circle"
     /// 37.circle.fill
-    case circleFill37
+    case circleFill37 = "37.circle.fill"
     /// 37.square
-    case square37
+    case square37 = "37.square"
     /// 37.square.fill
-    case squareFill37
+    case squareFill37 = "37.square.fill"
     /// 38.circle
-    case circle38
+    case circle38 = "38.circle"
     /// 38.circle.fill
-    case circleFill38
+    case circleFill38 = "38.circle.fill"
     /// 38.square
-    case square38
+    case square38 = "38.square"
     /// 38.square.fill
-    case squareFill38
+    case squareFill38 = "38.square.fill"
     /// 39.circle
-    case circle39
+    case circle39 = "39.circle"
     /// 39.circle.fill
-    case circleFill39
+    case circleFill39 = "39.circle.fill"
     /// 39.square
-    case square39
+    case square39 = "39.square"
     /// 39.square.fill
-    case squareFill39
+    case squareFill39 = "39.square.fill"
     /// 40.circle
-    case circle40
+    case circle40 = "40.circle"
     /// 40.circle.fill
-    case circleFill40
+    case circleFill40 = "40.circle.fill"
     /// 40.square
-    case square40
+    case square40 = "40.square"
     /// 40.square.fill
-    case squareFill40
+    case squareFill40 = "40.square.fill"
     /// 41.circle
-    case circle41
+    case circle41 = "41.circle"
     /// 41.circle.fill
-    case circleFill41
+    case circleFill41 = "41.circle.fill"
     /// 41.square
-    case square41
+    case square41 = "41.square"
     /// 41.square.fill
-    case squareFill41
+    case squareFill41 = "41.square.fill"
     /// 42.circle
-    case circle42
+    case circle42 = "42.circle"
     /// 42.circle.fill
-    case circleFill42
+    case circleFill42 = "42.circle.fill"
     /// 42.square
-    case square42
+    case square42 = "42.square"
     /// 42.square.fill
-    case squareFill42
+    case squareFill42 = "42.square.fill"
     /// 43.circle
-    case circle43
+    case circle43 = "43.circle"
     /// 43.circle.fill
-    case circleFill43
+    case circleFill43 = "43.circle.fill"
     /// 43.square
-    case square43
+    case square43 = "43.square"
     /// 43.square.fill
-    case squareFill43
+    case squareFill43 = "43.square.fill"
     /// 44.circle
-    case circle44
+    case circle44 = "44.circle"
     /// 44.circle.fill
-    case circleFill44
+    case circleFill44 = "44.circle.fill"
     /// 44.square
-    case square44
+    case square44 = "44.square"
     /// 44.square.fill
-    case squareFill44
+    case squareFill44 = "44.square.fill"
     /// 45.circle
-    case circle45
+    case circle45 = "45.circle"
     /// 45.circle.fill
-    case circleFill45
+    case circleFill45 = "45.circle.fill"
     /// 45.square
-    case square45
+    case square45 = "45.square"
     /// 45.square.fill
-    case squareFill45
+    case squareFill45 = "45.square.fill"
     /// 46.circle
-    case circle46
+    case circle46 = "46.circle"
     /// 46.circle.fill
-    case circleFill46
+    case circleFill46 = "46.circle.fill"
     /// 46.square
-    case square46
+    case square46 = "46.square"
     /// 46.square.fill
-    case squareFill46
+    case squareFill46 = "46.square.fill"
     /// 47.circle
-    case circle47
+    case circle47 = "47.circle"
     /// 47.circle.fill
-    case circleFill47
+    case circleFill47 = "47.circle.fill"
     /// 47.square
-    case square47
+    case square47 = "47.square"
     /// 47.square.fill
-    case squareFill47
+    case squareFill47 = "47.square.fill"
     /// 48.circle
-    case circle48
+    case circle48 = "48.circle"
     /// 48.circle.fill
-    case circleFill48
+    case circleFill48 = "48.circle.fill"
     /// 48.square
-    case square48
+    case square48 = "48.square"
     /// 48.square.fill
-    case squareFill48
+    case squareFill48 = "48.square.fill"
     /// 49.circle
-    case circle49
+    case circle49 = "49.circle"
     /// 49.circle.fill
-    case circleFill49
+    case circleFill49 = "49.circle.fill"
     /// 49.square
-    case square49
+    case square49 = "49.square"
     /// 49.square.fill
-    case squareFill49
+    case squareFill49 = "49.square.fill"
     /// 50.circle
-    case circle50
+    case circle50 = "50.circle"
     /// 50.circle.fill
-    case circleFill50
+    case circleFill50 = "50.circle.fill"
     /// 50.square
-    case square50
+    case square50 = "50.square"
     /// 50.square.fill
-    case squareFill50
+    case squareFill50 = "50.square.fill"
 }
 // swiftlint:enable all
