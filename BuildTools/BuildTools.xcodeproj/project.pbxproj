@@ -78,7 +78,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Move project root directory.\ncd ..\n\nout_put_file=\"Tools/Tool\"\nsource_directory_path=\"Tools/Tools/*\"\nsources=`find $source_directory_path -type f -name \"*.swift\"`\ngenerate_code_path=\"${pwd}/Sources/SFSymbolsPicker/Generated\"\n\nrm -rf $out_put_file\n\n# Build Tool.\n/usr/bin/xcrun -sdk macosx swiftc -o \"${out_put_file}\" $sources\n\n# Run Tool.\n./Tools/Tool \"${generate_code_path}\"\n";
+			shellScript = "# Move project root directory.\ncd ..\n\nout_put_file=\"Tools/Tool\"\nsource_directory_path=\"Tools/Tools/*\"\nsources=`find $source_directory_path -type f -name \"*.swift\"`\ngenerate_code_path=\"/Sources/SFSymbolsPicker/Generated\"\n\nrm -rf $out_put_file\n\n# Build Tool.\n/usr/bin/xcrun -sdk macosx swiftc -o \"${out_put_file}\" $sources\n\n# Run Tool.\n#rm -rf $generate_code_path\n./Tools/Tool \"${PWD}${generate_code_path}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

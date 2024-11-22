@@ -66,7 +66,7 @@ private extension FileGenerator {
         let splitByLines = versions
             .flatMap { $0.sfSymbolNames.split(separator: "\n") }
             .map { String($0).trimmingCharacters(in: .whitespacesAndNewlines) }
-        // Remove `.` from symbol name and translate camel case.
+        // Remove `.` from symbol name and translate to camel case.
         let formattedNames = splitByLines.map { formateSFSymbolName($0) }
         return formattedNames
     }
@@ -77,12 +77,10 @@ private extension FileGenerator {
             "repeat",
             "return",
         ]
-        let components = name.split(separator: ".")
-            .map { String($0) }
 
         // If symbol name is only one word, use original name.
-        if components.count < 1 {
-            // However, if symbol name uses Swift reserved word, rename like `repeat`.
+        if !name.contains(".") {
+            // However, if symbol name uses Swift reserved word, escape like `repeat`.
             let formatted = reservedWords.contains(name)
                 ? "`\(name)`"
                 : name
@@ -91,6 +89,10 @@ private extension FileGenerator {
                 formatted: formatted
             )
         }
+
+        // Split symbol name with `.`.
+        let components = name.split(separator: ".")
+            .map { String($0) }
 
         let prefix: String
         let dropPrefixComponents: [String]
