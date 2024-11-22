@@ -1,0 +1,138 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		A38568DB2CF0BC9C0056A351 /* BuildTools */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A38568DC2CF0BC9C0056A351 /* Build configuration list for PBXAggregateTarget "BuildTools" */;
+			buildPhases = (
+				A38568DF2CF0BCA30056A351 /* Build Tools Script */,
+			);
+			dependencies = (
+			);
+			name = BuildTools;
+			packageProductDependencies = (
+			);
+			productName = BuildTools;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXGroup section */
+		A38568D42CF0BC6D0056A351 = {
+			isa = PBXGroup;
+			children = (
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		A38568D52CF0BC6D0056A351 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A38568DB2CF0BC9C0056A351 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = A38568D82CF0BC6D0056A351 /* Build configuration list for PBXProject "BuildTools" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A38568D42CF0BC6D0056A351;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A38568DB2CF0BC9C0056A351 /* BuildTools */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A38568DF2CF0BCA30056A351 /* Build Tools Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Tools Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ..\n\nout_put_file=\"Tools/Tool\"\nsource_directory_path=\"Tools/Tools/*\"\nsources=`find $source_directory_path -type f -name \"*.swift\"`\n\nrm -rf $out_put_file\n\n/usr/bin/xcrun -sdk macosx swiftc -o \"${out_put_file}\" $sources\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A38568D92CF0BC6D0056A351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		A38568DA2CF0BC6D0056A351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		A38568DD2CF0BC9C0056A351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A38568DE2CF0BC9C0056A351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A38568D82CF0BC6D0056A351 /* Build configuration list for PBXProject "BuildTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38568D92CF0BC6D0056A351 /* Debug */,
+				A38568DA2CF0BC6D0056A351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A38568DC2CF0BC9C0056A351 /* Build configuration list for PBXAggregateTarget "BuildTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38568DD2CF0BC9C0056A351 /* Debug */,
+				A38568DE2CF0BC9C0056A351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A38568D52CF0BC6D0056A351 /* Project object */;
+}
