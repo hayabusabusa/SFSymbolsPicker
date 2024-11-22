@@ -13,16 +13,10 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SFSymbolsPicker",
-            plugins: [
-                .plugin(name: "SFSymbolsToolsPlugin")
-            ]),
+            name: "SFSymbolsPicker"),
         .testTarget(
             name: "SFSymbolsPickerTests",
             dependencies: ["SFSymbolsPicker"]
         ),
-        .plugin(
-            name: "SFSymbolsToolsPlugin",
-            capability: .buildTool()),
     ]
 )
