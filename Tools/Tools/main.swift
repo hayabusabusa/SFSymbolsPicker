@@ -8,5 +8,13 @@
 import Foundation
 
 func main() throws {
-    print("Hello, World!")
+    let arguments = try Arguments(arguments: ProcessInfo.processInfo.arguments)
+    let generator = FileGenerator(arguments: arguments)
+    try generator.generate()
+}
+
+do {
+    try main()
+} catch {
+    fatalError("SFSymbolsPicker Tool Error: \(error.localizedDescription)")
 }
