@@ -36,7 +36,7 @@ private extension FileGenerator {
         import Foundation
         
         // swiftlint:disable all
-        public enum SFSymbol: CaseIterable {
+        public enum SFSymbol: String, CaseIterable {
         %@
         }
         // swiftlint:enable all
@@ -46,7 +46,7 @@ private extension FileGenerator {
     func makeSFSymbolEnumCode() -> String {
         let sfSymbolNames = loadSFSymbolNames()
         let caseText = sfSymbolNames
-            .map { name in "    /// \(name.original)\n    case \(name.formatted)" }
+            .map { name in "    /// \(name.original)\n    case \(name.formatted) = \"\(name.original)\"" }
             .reduce("") { result, caseText in
                 // Remove first line.
                 guard !result.isEmpty else {
@@ -78,8 +78,12 @@ private extension FileGenerator {
             "return",
         ]
 
+        // Split symbol name with `.`.
+        let components = name.split(separator: ".")
+            .map { String($0) }
+
         // If symbol name is only one word, use original name.
-        if !name.contains(".") {
+        if components.count < 2 {
             // However, if symbol name uses Swift reserved word, escape like `repeat`.
             let formatted = reservedWords.contains(name)
                 ? "`\(name)`"
@@ -89,10 +93,6 @@ private extension FileGenerator {
                 formatted: formatted
             )
         }
-
-        // Split symbol name with `.`.
-        let components = name.split(separator: ".")
-            .map { String($0) }
 
         let prefix: String
         let dropPrefixComponents: [String]
