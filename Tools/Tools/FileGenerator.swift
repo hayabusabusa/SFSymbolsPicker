@@ -60,7 +60,7 @@ private extension FileGenerator {
 
     func loadSFSymbolNames() -> [SFSymbolName] {
         let versions: [SFSymbolsSupportedPlatform] = [
-            .iOS(.v13)
+            .iOS(.v15)
         ]
         // TODO: Support platform version
         let splitByLines = versions
@@ -97,12 +97,12 @@ private extension FileGenerator {
         let prefix: String
         let dropPrefixComponents: [String]
         // If the prefix of symbol name is numerical values, rearrange components.
-        if let _ = Int(components.first!) {
-            // `[50, square]` to `[square, 50]`.
+        if components.first!.rangeOfCharacter(from: .decimalDigits) != nil {
+            // `[50, square, fill]` to `[square, 50, fill]`.
             let numericalPrefix = components.first!
             let dropNumericalPrefix = components.dropFirst()
             prefix = dropNumericalPrefix.first!
-            dropPrefixComponents = dropNumericalPrefix.dropFirst() + [numericalPrefix]
+            dropPrefixComponents = [numericalPrefix] + dropNumericalPrefix.dropFirst()
         } else {
             prefix = components.first!
             dropPrefixComponents = Array(components.dropFirst())

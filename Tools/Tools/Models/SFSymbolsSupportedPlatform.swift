@@ -13,10 +13,11 @@ enum SFSymbolsSupportedPlatform {
 
 extension SFSymbolsSupportedPlatform {
     enum iOSVersion: String {
-        case v13 = "13"
-        case v13_1 = "13.1"
-        case v14 = "14"
         case v15 = "15"
+        case v16 = "16"
+        case v17 = "17"
+        case v18 = "18"
+
     }
 }
 
@@ -25,14 +26,14 @@ extension SFSymbolsSupportedPlatform {
         switch self {
         case let .iOS(version):
             switch version {
-            case .v13:
-                return Self.iOS13Supported
-            case .v13_1:
-                return ""
-            case .v14:
-                return ""
             case .v15:
-                return ""
+                Self.iOS15Supported
+            case .v16:
+                ""
+            case .v17:
+                ""
+            case .v18:
+                ""
             }
         }
     }

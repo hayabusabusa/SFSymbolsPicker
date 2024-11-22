@@ -9,8 +9,25 @@ import SwiftUI
 
 public struct SFSymbolsPicker: View {
     public var body: some View {
-        Text("Picker")
+        List(SFSymbol.allCases, id: \.rawValue) { symbol in
+            Button {
+
+            } label: {
+                HStack {
+                    Image(symbol: symbol)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 24, height: 24)
+                    Text(symbol.rawValue)
+                }
+                .foregroundStyle(Color(.label))
+            }
+        }
     }
     
     public init() {}
+}
+
+#Preview {
+    SFSymbolsPicker()
 }

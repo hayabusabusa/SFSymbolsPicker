@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "SFSymbolsPicker",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v15)],
     products: [
         .library(
             name: "SFSymbolsPicker",
