@@ -19,3 +19,21 @@ extension SFSymbolsSupportedPlatform {
         case v15 = "15"
     }
 }
+
+extension SFSymbolsSupportedPlatform {
+    var sfSymbolNames: String {
+        switch self {
+        case let .iOS(version):
+            switch version {
+            case .v13:
+                return Self.iOS13Supported
+            case .v13_1:
+                return ""
+            case .v14:
+                return ""
+            case .v15:
+                return ""
+            }
+        }
+    }
+}

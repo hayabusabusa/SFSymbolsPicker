@@ -9,28 +9,19 @@ import Foundation
 
 struct Arguments {
     enum Argument: Int, CaseIterable {
-        case executableFilePath
-        case packageDirectoryPath
-        case workingDirectoryPath
+        case currentDirectoryPath
+        case outputFilePath
     }
 
     var arguments: [String]
 
-    var executableFilePath: URL {
-        URL(fileURLWithPath: arguments[Argument.executableFilePath.rawValue])
-    }
-
-    var packageDirectoryPath: URL {
-        URL(fileURLWithPath: arguments[Argument.packageDirectoryPath.rawValue])
-    }
-
-    var workingDirectoryPath: URL {
-        URL(fileURLWithPath: arguments[Argument.workingDirectoryPath.rawValue])
+    var outputFilePath: URL {
+        URL(fileURLWithPath: arguments[Argument.outputFilePath.rawValue])
     }
 
     init(arguments: [String]) throws {
         guard arguments.count == Argument.allCases.count else {
-            throw ToolError.containsInvalidArgument
+            throw ToolError.containsInvalidArgument(arguments.joined(separator: " "))
         }
         self.arguments = arguments
     }

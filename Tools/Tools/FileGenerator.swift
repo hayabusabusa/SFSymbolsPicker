@@ -15,7 +15,7 @@ struct FileGenerator {
     }
 
     func generate() throws {
-        let code = try makeSFSymbolEnumCode()
+        let code = makeSFSymbolEnumCode()
         FileManager.default.createFile(
             atPath: generatedCodePath,
             contents: code.data(using: .utf8)
@@ -25,7 +25,7 @@ struct FileGenerator {
 
 private extension FileGenerator {
     var generatedCodePath: String {
-        arguments.workingDirectoryPath
+        arguments.outputFilePath
             .appending(path: "SFSymbol")
             .appendingPathExtension("swift")
             .path()
@@ -43,39 +43,83 @@ private extension FileGenerator {
         """
     }
 
-    func makeSFSymbolEnumCode() throws -> String {
-        let sfSymbolNames = try loadSFSymbolNames()
+    func makeSFSymbolEnumCode() -> String {
+        let sfSymbolNames = loadSFSymbolNames()
         let caseText = sfSymbolNames
-            .map { name in "    /// \(name)\n    case \(name)" }
+            .map { name in "    /// \(name.original)\n    case \(name.formatted)" }
             .reduce("") { result, caseText in
-                "\(result)\n\(caseText)"
+                // Remove first line.
+                guard !result.isEmpty else {
+                    return caseText
+                }
+                return "\(result)\n\(caseText)"
             }
         let code = String(format: codeTemplate, caseText)
         return code
     }
 
-    func loadSFSymbolNames() throws -> [String] {
-        let osVersions: [SFSymbolsSupportedPlatform] = [.iOS(.v13)]
-        let fileNames = osVersions.map { $0.fileName }
-        let sfSymbolNames = try fileNames.flatMap { try loadTextFile(fileName: $0) }
-        return sfSymbolNames
+    func loadSFSymbolNames() -> [SFSymbolName] {
+        let versions: [SFSymbolsSupportedPlatform] = [
+            .iOS(.v13)
+        ]
+        // TODO: Support platform version
+        let splitByLines = versions
+            .flatMap { $0.sfSymbolNames.split(separator: "\n") }
+            .map { String($0).trimmingCharacters(in: .whitespacesAndNewlines) }
+        // Remove `.` from symbol name and translate camel case.
+        let formattedNames = splitByLines.map { formateSFSymbolName($0) }
+        return formattedNames
     }
 
-    func loadTextFile(fileName: String) throws -> [String] {
-        guard let fileURL = Bundle.main.url(forResource: fileName, withExtension: "txt"),
-              let contents = try? String(contentsOf: fileURL, encoding: .utf8) else {
-            throw ToolError.textFileNotFound
+    func formateSFSymbolName(_ name: String) -> SFSymbolName {
+        let reservedWords = [
+            "case",
+            "repeat",
+            "return",
+        ]
+        let components = name.split(separator: ".")
+            .map { String($0) }
+
+        // If symbol name is only one word, use original name.
+        if components.count < 1 {
+            // However, if symbol name uses Swift reserved word, rename like `repeat`.
+            let formatted = reservedWords.contains(name)
+                ? "`\(name)`"
+                : name
+            return SFSymbolName(
+                original: name,
+                formatted: formatted
+            )
         }
-        let splitByLines = contents.split(separator: "\n")
-        return splitByLines.map { String($0).trimmingCharacters(in: .whitespacesAndNewlines) }
+
+        let prefix: String
+        let dropPrefixComponents: [String]
+        // If the prefix of symbol name is numerical values, rearrange components.
+        if let _ = Int(components.first!) {
+            // `[50, square]` to `[square, 50]`.
+            let numericalPrefix = components.first!
+            let dropNumericalPrefix = components.dropFirst()
+            prefix = dropNumericalPrefix.first!
+            dropPrefixComponents = dropNumericalPrefix.dropFirst() + [numericalPrefix]
+        } else {
+            prefix = components.first!
+            dropPrefixComponents = Array(components.dropFirst())
+        }
+
+        // Make camel case name.
+        let uppercasedComponents = dropPrefixComponents.map { $0.uppercasedOnlyPrefix() }
+        let joinedComponents = uppercasedComponents.joined()
+        return SFSymbolName(
+            original: name,
+            formatted: prefix + joinedComponents
+        )
     }
 }
 
-private extension SFSymbolsSupportedPlatform {
-    var fileName: String {
-        switch self {
-        case let .iOS(version):
-            "iOS\(version)"
-        }
+private extension String {
+    func uppercasedOnlyPrefix() -> String {
+        let uppercasedPrefix = self.prefix(1).uppercased()
+        let dropPrefix = self.dropFirst()
+        return uppercasedPrefix + dropPrefix
     }
 }

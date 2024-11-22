@@ -8,15 +8,15 @@
 import Foundation
 
 enum ToolError: Error {
-    case containsInvalidArgument
+    case containsInvalidArgument(String)
     case textFileNotFound
 }
 
 extension ToolError: LocalizedError {
     public var errorDescription: String? {
         switch self {
-        case .containsInvalidArgument:
-            return "Contains invalid argument"
+        case let .containsInvalidArgument(arguments):
+            return "Contains invalid argument in \(arguments)"
         case .textFileNotFound:
             return "Text file not found"
         }
